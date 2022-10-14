@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,body {
+  font-family: 'Visby CF';
+}
+
+.primary-container {
+  @apply max-w-screen-lg 3xl:max-w-7xl mx-auto px-5;
+}
+
+.span-block{
+  @apply inline lg:block;
+}
+
+.primary-button {
+  @apply focus:outline-none focus:bg-theme-red focus:border-theme-red hover:focus:text-white cursor-pointer bg-primary text-white px-4 py-2 font-semibold rounded-xl border-primary border-2 hover:bg-transparent hover:text-primary transition-all;
+}
+
+.primary-button-invert {
+  @apply cursor-pointer bg-transparent text-primary px-4 py-2 font-semibold rounded-xl border-primary border-2 hover:bg-primary hover:text-white transition-all;
+}
+
+.secondary-button {
+  @apply cursor-pointer bg-gray-800 text-white px-4 py-2 font-semibold rounded-xl border-gray-800 border-2 hover:bg-transparent hover:text-gray-800 transition-all;
+}
+
+.secondary-button-invert {
+  @apply cursor-pointer bg-transparent text-gray-800 px-4 py-2 font-semibold rounded-xl border-gray-800 border-2 hover:bg-gray-800 hover:text-white transition-all;
+}
+
+.default-button {
+  @apply cursor-pointer bg-gray-100 text-primary px-4 py-2 font-semibold rounded-xl border-gray-100 border-2 hover:bg-transparent hover:text-white transition-all;
+}
+
+.default-button-invert {
+  @apply cursor-pointer bg-transparent text-gray-100 px-4 py-2 font-semibold rounded-xl border-gray-100 border-2 hover:bg-gray-100 hover:text-primary transition-all;
+}
+
+
+
+.heading-1 {
+  @apply text-2xl md:text-4xl font-visby-bold;
+}
+
+.heading-2 {
+  @apply text-2xl md:text-3xl font-visby-bold;
+}
+
+.heading-3 {
+  @apply text-xl md:text-2xl font-visby-bold;
+}
+
+
+
+/*When the button is active or mouse hovers*/
+button.accordion-button.active,
+button.course-accordion:hover {
+    background-color: #3f3f46;
+    color: white;
+}
+
+button.accordion-button.active svg {
+    color: white;
+}
+
+/*button not active*/
+button.course-accordion:after {
+    content: '';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/* minus button */
+button.accordion-button.active:after {
+    content: "";
+}
+
+.accordion-panel {
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.splide__arrow {
+  background: transparent!important;
+}
+
+.splide__pagination__page:focus, .splide__pagination__page:active, .splide__arrow:focus, .splide__arrow a:focus {
+  outline:none!important;
+}
+
+.splide__pagination__page {
+  margin: 4px!important;
+}
+
+.splide__pagination__page svg {
+  fill:##727272!important;
+}
+
+.splide__pagination__page.is-active {
+  background: gray!important;
+  width: 30px;
+  border-radius: 15px;
+  transform: scale(1)!important;
+}
+
+.pricing-shadow {
+  box-shadow: -3px 0px 10px 0px #dedede;
+}
+
+.form-input {
+  @apply w-full font-medium bg-gray-100 px-4 p-4 rounded-xl focus:outline-none active:outline-none focus:bg-gray-200;
+}
+
+.search-input {
+  @apply p-5 w-full font-medium bg-white focus:outline-none active:outline-none;
+}
+
+
+.navbar-dropdown {
+  @apply relative;
+}
+
+.navbar-dropdown > ul {
+  @apply opacity-0 transition-all scale-[0];
+}
+
+.navbar-dropdown:hover > ul {
+  @apply opacity-100 scale-100;
+}
+
+.video-popup-overlay {
+  @apply -z-[10] opacity-0;
+}
+.video-popup-overlay-active {
+  @apply z-[100] opacity-100;
+}
+
+.video-popup {
+  @apply -z-[10] scale-0;
+}
+.video-popup-active {
+  @apply z-[100] scale-100;
+}

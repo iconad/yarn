@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yarn</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="app" class="site-wrapper py-10">
+
+
+      <!-- Popup start -->
+      <div id="videoPupupOverlay" class="fixed inset-0 bg-theme-black bg-opacity-75 flex items-center justify-center transition-all duration video-popup-overlay">
+
+        <div id="videoPupup" class="bg-gray-100 w-auto md:w-5/6 md:w-3/4 lg:w-1/2 h-auto md:h-[20rem] lg:h-[25rem] xl:h-[30rem] 2xl:h-[45rem] rounded-xl video-popup transition-all duration-300 relative shadow-2xl shadow h-[30rem]">
+
+          <div id="closeVideoPopup" class="absolute -right-5 md:-right-10 -top-5 md:-top-10 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-100 w-6 lg:w-10 h-6 lg:h-10 hover:rotate-90 transition-all duration-[0.4s]">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+          <!-- close button -->
+
+            <iframe class="abosolute inset-0 h-full rounded-xl overflow-hidden" width="100%" height="100%"  src="https://www.youtube.com/embed/WzXffGepz0s?controls=1&mute=1&autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- youtube video -->
+
+
+
+        </div>
+
+      </div>
+      <!-- Popup end -->
+
+        <div class="primary-container">
+
+            <div class="navbar-wrapper flex items-center justify-between bg-gray-100 p-10 rounded-t-xl">
+
+                <div class="nav-logo">
+                <img src="/images/logo.png" alt="logo" class="w-24">
+                </div>
+                <!-- nav-logo -->
+
+                <nav id="mainNavbar" class="main-navbar hidden bg-gray-100 lg:flex w-full lg:w-auto absolute lg:static inset-0 z-10 items-center justify-center">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute right-10 cursor-pointer top-10 w-10 h-10 block lg:hidden" id="closeNavbar">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+
+                <ul class="navbar flex flex-col lg:flex-row items-center space-y-5 lg:space-y-0 lg:space-x-5 2xl:space-x-8 text-xl lg:text-base font-medium">
+                  <li> <a href="about.html" class="hover:text-primary"> About Us </a> </li>
+                  <li class="navbar-dropdown">
+                    <a href="products.html" class="hover:text-primary flex items-center space-x-[2px]">
+                      <span class="font-semibold">Products</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                    </a>
+
+                    <ul class="absolute left-0 top-[102%] shadow border bg-gray-100 rounded-2xl w-auto overflow-hidden">
+                      <li> <a href="#CRM" class="px-5 py-3 block hover:bg-gray-200 whitespace-nowrap"> CRM </a> </li>
+                      <li> <a href="#MaintenanceManagement" class="px-5 py-3 block hover:bg-gray-200 whitespace-nowrap"> Maintenance Management </a> </li>
+                      <li> <a href="#securityAndAccess" class="px-5 py-3 block hover:bg-gray-200 whitespace-nowrap"> Security & Access </a> </li>
+                    </ul>
+
+                  </li>
+                  <li> <a href="pricing.html" class="hover:text-primary"> Pricing </a> </li>
+                  <li> <a href="demo.html" class="hover:text-primary"> Request a demo </a> </li>
+                  <li> <a href="blog.html" class="hover:text-primary"> Blog </a> </li>
+                  <li class="navbar-dropdown">
+                    <a href="#" class="hover:text-primary flex items-center space-x-[2px]">
+                      <span>English</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                    </a>
+
+                    <ul class="absolute left-0 top-[102%] bg-gray-200 rounded-2xl w-26 overflow-hidden">
+                      <li> <a href="#" class="px-5 py-5 block hover:bg-gray-300"> العربية </a> </li>
+                    </ul>
+
+                  </li>
+                  <li class="pt-2 lg:pt-0">
+                    <a href="login.html" class="primary-button"> Login </a>
+                  </li>
+                </ul>
+                <!-- navbar -->
+
+                </nav>
+                <!-- main navbar -->
+
+                <div id="navbarBurger" class="cursor-pointer navbar-burger block lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                </div>
+
+            </div>
+            <!-- navbar wrapper -->
+
+        </div>
+        <!-- container -->
+
+      <section class="cover-section primary-container">
+
+        <div class="inner-container bg-gray-100 rounded-b-xl p-10">
+
+        <div class="cover-content py-12 md:py-24 lg:py-32 flex items-center">
+
+          <div class="flex items-center w-full">
+
+            <div class="w-full space-y-10 text-center">
+              <div class="space-y-5">
+                <h1 class="text-3xl lg:text-4xl font-visby-bold">
+                  <span class="block">The All-In-One Property</span>
+                  <span class="block">Management</span>
+                </h1>
+                <p>
+                  <span class="span-block">Is an all-in-one solution for all your property</span>
+                  <span class="span-block">management and business needs</span>
+                </p>
+
+                <a href="#nextSec" class="flex justify-center cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+              </div>
+            </div>
+            <!-- left side -->
+
+          </div>
+          <!-- flex -->
+        </div>
+        <!-- cover content -->
+        </div>
+        <!-- inner container -->
+      </section>
+      <!-- cover section -->
+
+      <section class="your-real-tmime-section my-16 md:my-48 2xl:my-64 relative" id="nextSec">
+
+        <div class="absolute inset-0 overflow-hidden flex items-center" id="CRM">
+            <img src="/images/products/bar.png" alt="image" class="-ml-16 md:-ml-32 lg:-ml-64">
+        </div>
+
+        <div class="primary-container">
+            <h3 class="font-visby-bold text-center sm:space-y-4">
+                <span class="block text-3xl md:text-4xl lg:text-5xl">Your real-time</span>
+                <span class="block text-4xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-theme-red to-theme-yellow">CRM Features</span>
+            </h3>
+
+            <div>
+                <img src="/images/products/tabs.png" alt="tab image" class="relative z-1 scale-125 sm:scale-110">
+            </div>
+
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- your real time section -->
+
+
+      <section class="leader-in-gcc mt-24 md:mt-48 2xl:mt-64">
+
+        <div class="primary-container">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 text-center lg:text-left">
+
+            <div class="card rounded-3xl flex items-start justify-center relative">
+
+              <div class="space-y-3 relative z-1 text-center">
+                <img src="/images/products/icons/orange1.png" alt="image" class="w-16 mx-auto">
+                <div class="heading-3">Modern interface</div>
+                <p class="text-sm">Easily navigate through our dashboard and control everything from the tip of your finger.</p>
+              </div>
+
+            </div>
+            <!-- card -->
+
+
+            <div class="card rounded-3xl flex items-start justify-center relative">
+
+              <div class="space-y-3 relative z-1 text-center">
+                <img src="/images/products/icons/orange2.png" alt="image" class="w-16 mx-auto">
+                <div class="heading-3">Accessible</div>
+                <p class="text-sm">Anywhere, anytime, you just need an internet connection, and you can monitor all your properties and assets with a 360-degree perspective.</p>
+              </div>
+
+            </div>
+            <!-- card -->
+
+
+            <div class="card rounded-3xl flex items-start justify-center relative">
+
+              <div class="space-y-3 relative z-1 text-center">
+                <img src="/images/products/icons/orange3.png" alt="image" class="w-16 mx-auto">
+                <div class="heading-3">Full history logs</div>
+                <p class="text-sm">Monitor your team and have access to the entire activity on your dashboard and system.</p>
+              </div>
+
+            </div>
+            <!-- card -->
+
+          </div>
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- leaders in GCC -->
+
+
+      <section class="yarn-solutions-redefines mt-48 2xl:mt-72">
+
+        <div class="primary-container space-y-32">
+
+            <div class="section-boxes">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+
+                <div class="bg-gray-100 rounded-2xl p-10 relative ">
+                    <div class="space-y-3">
+                        <h3 class="heading-3">Pipeline Management</h3>
+                        <p> Categorize and organize your property with multi-unit types and full management information including (unit prices, payment cycles, photos, inventory, and unit documentation. </p>
+                    </div>
+                </div>
+                <!-- box -->
+
+                <div class="bg-gray-100 rounded-2xl p-10 relative ">
+                    <div class="space-y-3">
+                        <h3 class="heading-3">No need to change your current system</h3>
+                        <p> Our solution will work alongside your existing system rather than replacing them, and our team will work alongside your team to provide the needed expertise and training. </p>
+                    </div>
+                </div>
+                <!-- box -->
+
+            </div>
+            <!-- section boxes -->
+
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- boxes -->
+
+      <section class="my-16 md:my-48 2xl:my-64 relative" id="MaintenanceManagement">
+
+        <div class="absolute inset-0 overflow-hidden flex items-center justify-end">
+            <img src="/images/products/bar2.png" alt="image" class="mt-[35rem] md:mt-0 -mr-[5rem] md:-mr-[25rem] lg:-mr-[30rem]">
+        </div>
+
+        <div class="primary-container relative z-1">
+
+            <h3 class="font-visby-bold text-center mb-32">
+                <span class="block text-3xl md:text-4xl">Yarn solution for</span>
+                <span class="block text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-theme-purple to-theme-red">Maintenance Management</span>
+            </h3>
+
+          <div class="flex flex-col md:flex-row items-center space-y-16 lg:space-y-0 lg:space-x-16">
+            <div class="w-full lg:w-2/3 space-y-8 text-center lg:text-left">
+
+                <ul class="w-full sm:w-1/2 md:w-full mx-auto space-y-1">
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Monitor cost per task (Man-hour & spare part)</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Corrective & Preventive Maintenance</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Warranty Tracing</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Assign Tasksto staff, team & 3rd party</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Upload images/Videos</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Auto Scheduling & Follow up</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Tasks per location & Department</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Create Maintenance Teams</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Powerful Filtering & Grouping</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">3D Reporting</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Smart Maintenance & dynamic Calendar</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Select assets, unit, property, equipment</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Define inspection frequency & period</span>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-theme-purple">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-medium text-sm mt-[2px]">Full notifications cycle and SLA</span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- text -->
+            <div class="w-full">
+              <img src="/images/products/laptop.png" alt="tabs image" class="md:scale-125 ml-10 sm:ml-16">
+            </div>
+            <!-- image -->
+          </div>
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- list with checkboxes -->
+
+
+      <section class="yarn-solutions-redefines mt-48 2xl:mt-72">
+
+        <div class="primary-container space-y-32">
+
+            <div class="section-boxes">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+
+                <div class="bg-gray-100 rounded-2xl p-10 relative ">
+                    <div class="space-y-3">
+                        <h3 class="heading-3">Manage maintenance tasks and monitor costs with ease</h3>
+                        <p>The dashboard provides clear and concise data that enables you to make informed decisions about your maintenance tasks. You can easily assign tasks, schedule auto-follow ups, and create maintenance teams.</p>
+                    </div>
+                </div>
+                <!-- box -->
+
+                <div class="bg-gray-100 rounded-2xl p-10 relative ">
+                    <div class="space-y-3">
+                        <h3 class="heading-3">Preventive Maintenance</h3>
+                        <p> Preventive maintenance is a critical component of any facility management, our smart dynamic dashboard makes it easy to schedule preventive maintenance tasks and keep track of your assets. With our system, you can select the assets you want to maintain, assign them to staff & You'll receive full notifications throughout the maintenance cycle. </p>
+                    </div>
+                </div>
+                <!-- box -->
+
+            </div>
+            <!-- section boxes -->
+
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- boxes -->
+
+
+      <section class="your-real-tmime-section my-16 md:my-48 2xl:my-64 relative" id="securityAndAccess">
+
+        <div class="primary-container">
+
+            <h3 class="font-visby-bold text-center">
+                <span class="block text-3xl md:text-4xl lg:text-5xl">Security & Access</span>
+                <span class="block text-4xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-theme-red to-theme-yellow">Management System</span>
+            </h3>
+
+            <div class="section-header space-y-3 mt-10 text-center">
+                <h4 class="heading-3">Yarn is the smart choice for protecting your property.</h4>
+                <p>
+                    <span class="span block">In today's world, security is more important than ever. That's why our Smart Features offers a</span>
+                    <span class="span block">top-of-the-line security and access management system via Yarn technology solutions.</span>
+                </p>
+            </div>
+
+
+            <div class="yarn-modules mt-24">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                  <div class="module flex items-center space-x-2">
+                    <div> <img src="/images/products/icons/1.png" alt="icon" class="w-12"> </div>
+                    <!-- icon -->
+                    <div class="text-sm md:text-base lg:text-xl capitalize font-medium -space-y-2">
+                      <span class="block">Authorize & Organize</span>
+                      <span class="block">Visitors access</span>
+                    </div>
+                    <!-- name -->
+                  </div>
+                  <!-- module -->
+
+                  <div class="module flex items-center space-x-2">
+                    <div> <img src="/images/products/icons/2.png" alt="icon" class="w-12"> </div>
+                    <!-- icon -->
+                    <div class="text-sm md:text-base lg:text-xl capitalize font-medium -space-y-2">
+                      <span class="block">Generate Unique</span>
+                      <span class="block">Pass Code</span>
+                    </div>
+                    <!-- name -->
+                  </div>
+                  <!-- module -->
+
+                  <div class="module flex items-center space-x-2">
+                    <div> <img src="/images/products/icons/3.png" alt="icon" class="w-12"> </div>
+                    <!-- icon -->
+                    <div class="text-sm md:text-base lg:text-xl capitalize font-medium -space-y-2">
+                      <span class="block">Document all the</span>
+                      <span class="block">Visitor Access details</span>
+                    </div>
+                    <!-- name -->
+                  </div>
+                  <!-- module -->
+
+                  <div class="module flex items-center space-x-2">
+                    <div> <img src="/images/products/icons/4.png" alt="icon" class="w-12"> </div>
+                    <!-- icon -->
+                    <div class="text-sm md:text-base lg:text-xl capitalize font-medium -space-y-2">
+                      <span class="block">Track Visitors</span>
+                      <span class="block">entrance Log in /out</span>
+                    </div>
+                    <!-- name -->
+                  </div>
+                  <!-- module -->
+
+                  <div class="module flex items-center space-x-2">
+                    <div> <img src="/images/products/icons/5.png" alt="icon" class="w-12"> </div>
+                    <!-- icon -->
+                    <div class="text-sm md:text-base lg:text-xl capitalize font-medium -space-y-2">
+                      <span class="block">Track vehicle</span>
+                      <span class="block">date/owners</span>
+                    </div>
+                    <!-- name -->
+                  </div>
+                  <!-- module -->
+
+                  <div class="module flex items-center space-x-2">
+                    <div> <img src="/images/products/icons/6.png" alt="icon" class="w-12"> </div>
+                    <!-- icon -->
+                    <div class="text-sm md:text-base lg:text-xl capitalize font-medium -space-y-2">
+                      <span class="block">Track vendor</span>
+                      <span class="block">delivery & staff access</span>
+                    </div>
+                    <!-- name -->
+                  </div>
+                  <!-- module -->
+
+                </div>
+
+              </div>
+              <!-- section modules -->
+
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- Yarn modules -->
+
+
+      <section class="my-16 md:my-32 2xl:my-48 relative">
+
+        <div class="absolute inset-0 overflow-hidden flex items-center justify-end">
+            <img src="/images/products/bar3.png" alt="image" class="mt-[35rem] lg:mt-48 -mr-10 md:-mr-24 lg:-mr-32 w-2/3">
+        </div>
+
+        <div class="primary-container relative z-1">
+
+            <h3 class="font-visby-bold text-center mb-32">
+                <span class="block text-3xl sm:text-4xl md:text-5xl">Customized Tenant</span>
+                <span class="block text-3xl sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-theme-purple to-theme-red">Mobile App & Web Portal</span>
+            </h3>
+
+          <div class="flex flex-col lg:flex-row items-center space-y-16 lg:space-y-0 lg:space-x-16">
+            <div class="w-full lg:w-2/3 space-y-8 text-center lg:text-left">
+
+                <div class="space-y-5">
+                    <div class="space-y-3 text-base md:text-lg">
+                        <p>Using our free mobile app, your tenants will have all your services at their fingertips. From requesting maintenance to booking a therapy at the spa, or ordering a pizza in-house delivery, to viewing bills and payments.</p>
+                        <p>Our enterprise clients may even have their own branded mobile apps available on the app stores.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center lg:justify-start space-x-2">
+                        <div class="w-32 lg:w-32">
+                          <a href="">
+                            <img src="/images/appstore.svg" alt="app store icon" class="w-full">
+                          </a>
+                        </div>
+                        <div class="w-32 lg:w-32">
+                          <a href="">
+                            <img src="/images/playstore.svg" alt="app store icon" class="w-full">
+                          </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- text -->
+            <div class="w-full">
+              <img src="/images/products/mobiles.png" alt="tabs image" class="">
+            </div>
+            <!-- image -->
+          </div>
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- list with checkboxes -->
+
+
+
+      <section class="start-your-free-trail">
+
+        <div class="primary-container">
+
+          <div class="h-[30rem] bg-theme-maroon text-white flex items-center justify-center text-center rounded-3xl relative overflow-hidden">
+            <img src="/images/home/trail.png" alt="tail pattern" class="absolute h-full w-full right-0 bottom-0 object-cover">
+
+            <div class="space-y-10 relative z-1">
+
+              <div class="space-y-3">
+                <div class="text-4xl lg:text-6xl font-bold">Start your free trial now</div>
+                <div class="text-2xl lg:text-4xl font-medium">Get ahead of your competitors</div>
+              </div>
+
+              <div class="flex items-center justify-center space-x-2">
+                <button class="watchthedemo default-button">Watch the demo</button>
+                <a href="#" class="default-button-invert">Start Trial</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- container -->
+
+      </section>
+      <!-- start your free trail now section -->
+
+
+      <footer class="main-footer bg-theme-black text-whtie pb-8 pt-16 lg:py-16 mt-32">
+        <div class="primary-container">
+
+          <div class="flex flex-wrap lg:flex-nowrap space-y-16 lg:space-y-0 lg:space-x-10 text-center lg:text-left border-b border-gray-500 pb-10">
+
+            <div class="w-full">
+              <img src="/images/logo-black.png" alt="Yarn Logo" class="w-36 mx-auto lg:ml-auto">
+            </div>
+
+
+            <div class="w-full space-y-6">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-1">Client Gateway</h3>
+                <ul>
+                  <li> <a href="#" class="text-gray-100"> Request a demo </a> </li>
+                  <li> <a href="#" class="text-gray-100"> Support </a> </li>
+                  <li> <a href="#" class="text-gray-100"> Login / Signup </a> </li>
+                </ul>
+              </div>
+
+              <div class="flex items-center justify-center lg:justify-between space-x-2">
+                <div class="w-32 lg:w-full">
+                  <a href="">
+                    <img src="/images/appstore.svg" alt="app store icon" class="w-full">
+                  </a>
+                </div>
+                <div class="w-32 lg:w-full">
+                  <a href="">
+                    <img src="/images/playstore.svg" alt="app store icon" class="w-full">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="w-full space-y-6">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-1">Our Products</h3>
+                <ul>
+                  <li> <a href="#" class="text-gray-100"> Manzel Express </a> </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-1">Fast Links</h3>
+                <ul>
+                  <li> <a href="#" class="text-gray-100"> Pricing </a> </li>
+                  <li> <a href="#" class="text-gray-100"> Solutions </a> </li>
+                  <li> <a href="#" class="text-gray-100"> About Us </a> </li>
+                  <li> <a href="#" class="text-gray-100"> Press </a> </li>
+                </ul>
+              </div>
+
+            </div>
+
+
+            <div class="w-full space-y-6">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-1">Contact Us</h3>
+                <p class="text-gray-100">Let's talk about your goals!</p>
+                <a href="mailto:Info@Yarn.com.sa" class="text-gray-100">Info@Yarn.com.sa</a>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-1">Follow Us</h3>
+                <p class="text-gray-100 text-sm">Become one of our family & join our online community</p>
+
+                <ul class="flex items-center justify-center space-x-4 mt-5 text-gray-100">
+                  <li class="">
+                    <a href="https://www.facebook.com/MyBuffaloDrink">
+                      <svg class="fill-current w-5 h-5 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                  </li>
+
+                  <li class="">
+                    <a href="https://www.instagram.com/mybuffalodrink">
+                      <svg class="fill-current w-5 h-5 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 0 0 1.384 2.126A5.868 5.868 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 0 0 2.126-1.384 5.86 5.86 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 0 0-1.384-2.126A5.847 5.847 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 0 1-.899 1.382 3.744 3.744 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 0 1-1.379-.899 3.644 3.644 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+                    </a>
+                  </li>
+
+                  <li class="">
+                    <a href="https://twitter.com/mybuffalodrink">
+                      <svg class="fill-current w-5 h-5 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
+                    </a>
+                  </li>
+
+                  <li class="">
+                    <a href="https://www.youtube.com/channel/UCqMxVHFpZGNmIU37sRGOycA">
+                      <svg class="fill-current w-5 h-5 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                  </li>
+
+                  <li class="">
+                    <a href="https://www.snapchat.com/add/mybuffalodrink">
+                      <svg class="fill-current w-5 h-5 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301a.996.996 0 0 1 .464-.104c.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509a.606.606 0 0 1-.045.225c-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03a3.19 3.19 0 0 1-.538-.074 6.034 6.034 0 0 0-1.273-.135c-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884a6.623 6.623 0 0 0-.928-.074c-.54 0-.958.089-1.272.149a2.879 2.879 0 0 1-.54.074c-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226a.6.6 0 0 1-.055-.225.496.496 0 0 1 .42-.509c3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809a2.233 2.233 0 0 1-.346-.119c-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="copy-right mt-5 lg:mt-4 flex flex-col md:flex-row items-center justify-between text-white text-sm space-y-reverse space-y-2 lg:space-y-0">
+            <p class="order-2 lg:order-1 flex">&copy; All rights reserved by Yarn Cloud Technologies 2022.</p>
+            <ul class="order-1 lg:order-2 flex items-center">
+              <li> <a href="#"> Privacy & Policy </a> </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- container -->
+      </footer>
+      <!-- main footer -->
+
+
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

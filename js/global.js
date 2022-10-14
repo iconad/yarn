@@ -1,0 +1,122 @@
+
+//this is the button
+const videoPupupOverlay = document.getElementById("videoPupupOverlay");
+const videoPupup = document.getElementById("videoPupup");
+const closeVideoPopup = document.getElementById("closeVideoPopup");
+const accArrowUp = document.querySelector(".acc-arrow-up");
+const accArrowDown = document.querySelector(".acc-arrow-down");
+const watchthedemo = document.querySelectorAll(".watchthedemo");
+
+var acc = document.getElementsByClassName("accordion-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    //when one of the buttons are clicked run this function
+    acc[i].onclick = function() {
+    //variables
+    var panel = this.nextElementSibling;
+    var coursePanel = document.getElementsByClassName("accordion-panel");
+    var courseAccordion = document.getElementsByClassName("accordion-button");
+    var courseAccordionActive = document.getElementsByClassName("accordion-button active");
+
+    /*if pannel is already open - minimize*/
+    if (panel.style.maxHeight){
+        //minifies current pannel if already open
+        panel.style.maxHeight = null;
+        //removes the 'active' class as toggle didnt work on browsers minus chrome
+        this.classList.remove("active");
+        if(this.querySelector('.acc-arrow-up')){
+            this.querySelector('.acc-arrow-up').classList.add('hidden')
+            this.querySelector('.acc-arrow-down').classList.remove('hidden')
+        }
+
+    } else { //pannel isnt open...
+        //goes through the buttons and removes the 'active' css (+ and -)
+
+
+        const allarrows = document.querySelectorAll('.acc-arrow-up');
+
+        allarrows.forEach(arrow => {
+            arrow.classList.add('hidden')
+            this.querySelector('.acc-arrow-up').classList.remove('hidden')
+            this.querySelector('.acc-arrow-down').classList.add('hidden')
+        });
+
+
+
+        // if(this.querySelector('.acc-arrow-up')){
+        //     this.querySelector('.acc-arrow-up').classList.remove('hidden')
+        //     this.querySelector('.acc-arrow-down').classList.add('hidden')
+        // }
+
+        for (var ii = 0; ii < courseAccordionActive.length; ii++) {
+            courseAccordionActive[ii].classList.remove("active");
+        }
+        //Goes through and removes 'activ' from the css, also minifies any 'panels' that might be open
+        for (var iii = 0; iii < coursePanel.length; iii++) {
+            this.classList.remove("active");
+            coursePanel[iii].style.maxHeight = null;
+        }
+        //opens the specified pannel
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        //adds the 'active' addition to the css.
+        this.classList.add("active");
+
+
+
+
+
+
+    }
+
+
+    }//closing to the acc onclick function
+}
+
+// navbar-burger
+
+const navbarBurger = document.querySelector('#navbarBurger')
+const mainNavbar = document.querySelector('#mainNavbar')
+const closeNavbar = document.querySelector('#closeNavbar')
+
+navbarBurger.addEventListener('click', function () {
+    navbarBurger.classList.add('active')
+    let check = navbarBurger.classList.contains('active')
+    if(check) {
+        mainNavbar.classList.remove('hidden')
+        mainNavbar.classList.add('flex')
+    }
+})
+
+closeNavbar.addEventListener('click', function () {
+    navbarBurger.classList.remove('active')
+    mainNavbar.classList.add('hidden')
+    mainNavbar.classList.remove('flex')
+})
+
+
+watchthedemo.forEach(demo => {
+    demo.addEventListener('click', function handleClick(event) {
+
+        videoPupupOverlay.classList.remove('video-popup-overlay')
+        videoPupupOverlay.classList.add('video-popup-overlay-active')
+
+        videoPupup.classList.remove('video-popup')
+        videoPupup.classList.add('video-popup-active')
+
+    });
+  });
+
+
+
+closeVideoPopup.addEventListener('click', function () {
+
+    videoPupup.classList.remove('video-popup-active')
+    videoPupup.classList.add('video-popup')
+
+    videoPupupOverlay.classList.remove('video-popup-overlay-active')
+    videoPupupOverlay.classList.add('video-popup-overlay')
+
+
+
+})
