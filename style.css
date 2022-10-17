@@ -148,3 +148,27 @@ button.accordion-button.active:after {
 .video-popup-active {
   @apply z-[100] scale-100;
 }
+
+.moving-button {
+  @apply bg-theme-red absolute w-1/2 h-full top-0 rounded-full;
+}
+
+.moving-button-block {
+  @apply bg-theme-yellow;
+}
+
+.moving-button.is-one {
+  @apply left-0;
+}
+
+.moving-button.is-two {
+  @apply right-0;
+}
+
+.moving-button-text {
+  @apply text-gray-400
+}
+
+.moving-button-text.is-active {
+  @apply text-white
+}

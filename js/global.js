@@ -7,6 +7,8 @@ const accArrowUp = document.querySelector(".acc-arrow-up");
 const accArrowDown = document.querySelector(".acc-arrow-down");
 const watchthedemo = document.querySelectorAll(".watchthedemo");
 
+
+
 var acc = document.getElementsByClassName("accordion-button");
 var i;
 
@@ -109,14 +111,51 @@ watchthedemo.forEach(demo => {
 
 
 
-closeVideoPopup.addEventListener('click', function () {
+if(closeVideoPopup) {
+    closeVideoPopup.addEventListener('click', function () {
 
-    videoPupup.classList.remove('video-popup-active')
-    videoPupup.classList.add('video-popup')
+        videoPupup.classList.remove('video-popup-active')
+        videoPupup.classList.add('video-popup')
 
-    videoPupupOverlay.classList.remove('video-popup-overlay-active')
-    videoPupupOverlay.classList.add('video-popup-overlay')
+        videoPupupOverlay.classList.remove('video-popup-overlay-active')
+        videoPupupOverlay.classList.add('video-popup-overlay')
+    })
+}
 
 
 
-})
+// pricing button
+
+const ButtonPlace = document.querySelector('.button-place');
+const movingButton = document.querySelector('.moving-button');
+const movingButtonText = document.querySelector('.moving-button-text');
+const oneOption = document.querySelector('.one-option');
+const twoOption = document.querySelector('.two-option');
+
+if(ButtonPlace) {
+
+
+    ButtonPlace.addEventListener('click', function () {
+
+        if(movingButton.classList.contains('is-one')) {
+
+            movingButton.classList.remove('is-one')
+            movingButton.classList.add('is-two')
+
+            oneOption.classList.remove('is-active')
+            twoOption.classList.add('is-active')
+
+        }else{
+
+            movingButton.classList.add('is-one')
+            movingButton.classList.remove('is-two')
+
+            oneOption.classList.add('is-active')
+            twoOption.classList.remove('is-active')
+
+        }
+
+    })
+
+
+}

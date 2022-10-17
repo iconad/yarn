@@ -98,9 +98,10 @@
                 </p>
 
                 <a href="#nextSec" class="flex justify-center cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
+
+     <span class="block lg:hidden">Lorem ipsum</span>                 </svg>
                 </a>
               </div>
             </div>
@@ -127,15 +128,15 @@
 
             <div class="pricing-checkbox my-16">
 
-                <div class="h-12 lg:h-16 w-96 mx-auto flex items-center jusitfy-center relative cursor-pointer bg-gray-100 rounded-full">
-                    <div class="red-button-overlay bg-theme-red absolute w-1/2 h-full left-0 top-0 rounded-full"></div>
-                    <label class="w-1/2 relative z-1">
+                <div class="h-12 lg:h-16 w-96 mx-auto flex items-center jusitfy-center relative cursor-pointer bg-gray-100 rounded-full button-place">
+                    <div class="moving-button is-one transition-all"></div>
+                    <label class="w-1/2 relative z-1 pointer-events-none">
                         <input type="radio" class="hidden" name="pricing">
-                        <span class="text-lg lg:text-xl font-bold montly-pricing text-white">Monthly</span>
+                        <span class="text-lg lg:text-xl font-bold one-option moving-button-text is-active">Monthly</span>
                     </label>
-                    <label class="w-1/2 relative z-1">
+                    <label class="w-1/2 relative z-1 pointer-events-none">
                         <input type="radio" class="hidden" name="pricing">
-                        <span class="text-lg lg:text-xl font-bold text-gray-400 deployment-pricing">Deployment</span>
+                        <span class="text-lg lg:text-xl font-bold two-option moving-button-text">Deployment</span>
                     </label>
                 </div>
 
@@ -180,19 +181,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l border-r">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
 
 
@@ -201,19 +205,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l border-r">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
 
 
@@ -222,19 +229,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l border-r">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
 
 
@@ -243,19 +253,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l border-r">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
 
 
@@ -264,19 +277,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="bg-gray-100 py-5 px-5 w-1/3 lg:w-1/5 border-l border-r">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
 
 
@@ -286,19 +302,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden lg:block w-10 h-10 text-green-500 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
                     <div class="py-5 px-5 w-1/3 lg:w-1/5 border-l border-r">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden lg:block w-10 h-10 text-theme-red mx-auto">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
+                        <span class="block lg:hidden">Lorem ipsum</span>
                     </div>
 
 
