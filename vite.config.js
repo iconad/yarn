@@ -13,6 +13,7 @@ export default defineConfig({
         login: resolve(__dirname, 'login.html'),
         demo: resolve(__dirname, 'demo.html'),
         contact: resolve(__dirname, 'contact.html'),
+        privacy: resolve(__dirname, 'privacy-policy.html'),
       }
     }
   }
