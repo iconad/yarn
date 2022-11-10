@@ -8,6 +8,7 @@ module.exports = {
     "./login.html",
     "./demo.html",
     "./blog.html",
+    "./contact.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {

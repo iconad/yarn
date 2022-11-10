@@ -172,3 +172,34 @@ button.accordion-button.active:after {
 .moving-button-text.is-active {
   @apply text-white
 }
+
+.content-container {
+  /* @apply space-y-5; */
+}
+.content-container h1, .content-container h2 {
+  @apply font-bold text-gray-900 mt-5 mb-2;
+}
+.content-container h1 {
+  @apply text-3xl;
+}
+.content-container h2 {
+  @apply text-2xl;
+}
+.content-container p {
+  @apply text-lg my-3;
+}
+.content-container p, .content-container li {
+  @apply text-lg;
+}
+.content-container ul {
+  @apply my-5 list-disc ml-5 -mt-3;
+}
+.content-container ol {
+  @apply my-5 list-decimal ml-5 -mt-3;
+}
+.content-container a {
+  @apply text-primary font-medium;
+}
+.content-container a:hover {
+  @apply underline;
+}

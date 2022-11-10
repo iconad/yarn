@@ -1,0 +1,3721 @@
+<?php
+/**
+ * Template Name: esic after login
+ *
+ * Template for displaying a page just with the header and footer area and a "naked" content area in between.
+ * Good for landingpages and other types of pages where you want to add a lot of custom markup.
+ *
+ * @package UnderStrap
+ */
+?>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emirates Strategic Investment Company</title>
+    <meta name="description" content="">
+    <meta name="author" content="" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://icon-ad.xyz/esic/esic/css/plugins.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://icon-ad.xyz/esic/esic/css/style.css" type="text/css" media="screen" />
+
+
+    <link rel="stylesheet" href="https://icon-ad.xyz/esic/esic/images/swc.css" type="text/css" media="screen" />
+	<style>	#contactFormtest a{	border: 2px solid transparent;	border-radius: 0;	padding: 6px 20px;	margin: 20px 0;	text-transform: uppercase;	font-size: 12px;	font-weight: 600;	transition: all .3s;	position: relative;	color: #FFF;	background-color: #c5c5c5;	z-index: 20;	letter-spacing: 2px;	overflow: hidden;	text-decoration color: #FFF;	cursor: pointer;}#contactFormtest a:hover {	background-color: #FFF;	border: 2px solid #666;	letter-spacing: 3px;	color: #c5c5c5;}#contactFormtest .form-group{	margin-top: 10px;}
+
+	.selectedItem .blog-image{
+
+		background: #def1fd !important;
+	}
+	.blog-image{
+
+		background-color: #f1f3f6 !important;
+	}
+
+	.portfolio-heading{
+		font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #666;
+    line-height: 21px;
+
+	}
+	.block-title4 {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+
+	.gridder-show {
+   padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #def1fd !important;
+    color: #748182 !important;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+	   .gridder {
+ display: inline-table;
+    overflow: hidden;
+}
+body .content-services .support-box .gridder-show {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #d39452 !important;
+    color: #fff !important;
+}
+.content-services .support-box .gridder-show p {
+    color: #fff;
+}
+.support-box .gridder-show .gridder-padding {
+    text-align: left;
+    padding: 30px 15px;
+    position: relative;
+}
+.gridder-close {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 30px;
+    line-height: 30px;
+}
+.gridder-close:before {
+    font-family: 'FontAwesome';
+    content: "\f057";
+}
+
+
+
+
+
+/* Menu Style */
+
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu .main-menu {
+  display: none;
+}
+
+#tm:checked + .main-menu {
+  display: block;
+}
+
+#menu input[type="checkbox"],
+#menu ul span.drop-icon {
+  display: none;
+}
+
+#menu li,
+#toggle-menu,
+#menu .sub-menu {
+
+
+}
+
+#menu li,
+#toggle-menu {
+  border-width: 0px;
+}
+
+#menu .sub-menu {
+  background-color: #f1f3f6;
+  border-width: 0px 0px 0;
+  margin: 0 1em;
+}
+
+#menu .sub-menu li:last-child {
+  border-width: 0;
+}
+
+#menu li,
+#toggle-menu,
+#menu a {
+  position: relative;
+  display: block;
+  color: #666;
+
+}
+
+#menu,
+#toggle-menu {
+  background-color: #F1F3F6;
+}
+
+#toggle-menu,
+#menu a {
+  padding: 0.8em 1.5em;
+}
+
+#menu a {
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out;
+}
+
+#menu a:hover {
+  background-color: white;
+  color: #09c;
+}
+
+#menu .sub-menu {
+  display: none;
+}
+
+li#close2 {
+    display: block;
+}
+
+li#close {
+    display: none;
+}
+
+  li#togglecall {
+    display: block;
+}
+
+
+
+
+#menu input[type="checkbox"]:checked + .sub-menu {
+  display: block;
+}
+
+#menu .sub-menu a:hover {
+  color: #09c;
+}
+
+#toggle-menu .drop-icon,
+#menu li label.drop-icon {
+  position: absolute;
+  right: 1.5em;
+  top: 1.25em;
+}
+
+#menu label.drop-icon, #toggle-menu span.drop-icon {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .125);
+  text-shadow: 0 0 0 transparent;
+  color: rgba(255, 255, 255, .75);
+}
+
+#menu .drop-icon {
+  line-height: 1;
+}
+
+
+
+/* Responsive Menu */
+
+@media only screen and (max-width: 64em) and (min-width: 52.01em) {
+  #menu li {
+    width: 33.333%;
+  }
+
+  #menu .sub-menu li {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 52em) {
+  #menu .main-menu {
+    display: block;
+    float: right;
+    padding-right: 30px;
+  }
+
+  #toggle-menu,
+  #menu label.drop-icon {
+    display: none;
+  }
+
+  li#close2 {
+    display: none;
+}
+
+
+  li#togglecall {
+    display: none;
+}
+
+
+  li#close {
+    display: block;
+}
+
+
+  #menu ul span.drop-icon {
+    display: inline-block;
+  }
+
+  #menu li {
+    float: left;
+    border-width: 0px;
+  }
+
+  #menu .sub-menu li {
+    float: none;
+  }
+
+  #menu .sub-menu {
+    border-width: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12em;
+    z-index: 3000;
+  }
+
+  #menu .sub-menu,
+  #menu input[type="checkbox"]:checked + .sub-menu {
+    display: none;
+  }
+
+  #menu .sub-menu li {
+    border-width: 0 0 1px;
+  }
+
+  #menu .sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+  }
+
+  #menu li:hover > input[type="checkbox"] + .sub-menu {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+ @media (min-width: 992px){
+.col-lg-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 24% !important;
+}
+}
+
+
+
+
+
+
+	</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143188671-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143188671-4');
+</script>
+
+
+
+</head>
+
+<body >
+    <div class="preloader">
+        <div class="anim pulse"></div>
+    </div>
+    <div class="preloader-left"></div>
+    <div class="inline-menu-container" >
+
+
+       <nav id="menu">
+  <label for="tm" id="toggle-menu" ><span style="
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+" class=" ion-android-menu"></span></label>
+  <input type="checkbox" id="tm">
+  <ul class="main-menu clearfix">
+
+      <li id="close2" class="menu-item .close2 ion-ios-home" style="
+    text-align: left;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-left: 20px;
+">
+
+
+    </li>
+
+
+
+    <li class="about menu-item"><a href="javascript:void(0)">COMPANY
+        <span class="drop-icon">▾</span>
+        <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+      </a>
+      <input type="checkbox" id="sm1">
+      <ul class="sub-menu">
+        <li><a  href="#identity" class="identity">Identity</a></li>
+           <li ><a href="#history" class="history">History</a></li>
+              <li><a  href="#organisation" class="organisation">Organisation</a></li>
+      </ul>
+    </li>
+
+        <li class="portfolio menu-item"><a href="javascript:void(0)">PORTFOLIO
+        <span class="drop-icon">▾</span>
+        <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+      </a>
+      <input type="checkbox" id="sm2">
+      <ul class="sub-menu">
+        <li><a  href="#investmentmodel" class="investmentmodel">Investment Model</a></li>
+           <li><a href="#groupinvestments" class="groupinvestments">Group Investments</a></li>
+
+      </ul>
+    </li>
+
+
+
+          <li class="investors menu-item"><a href="javascript:void(0)">SHAREHOLDERS & INVESTORS
+        <span class="drop-icon">▾</span>
+        <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label>
+      </a>
+      <input type="checkbox" id="sm3">
+      <ul class="sub-menu">
+        <li><a href="#regulatedinformation" class="regulatedinformation">Regulated Information</a></li>
+           <li><a href="#analystcoverage" class="analystcoverage">Analyst Coverage</a></li>
+              <li><a href="#keyfactors" class="keyfactors">Key Factors</a></li>
+                            <li><a href="#investorsdomain" class="investorsdomain">Investors Domain</a></li>
+
+
+
+                                          <li><a href="#investormediacenter" class="investormediacenter">Investor Media Center</a></li>
+                                                              <li><a href="#investorfaqs" class="investorfaqs">Investor FAQs</a></li>
+
+      </ul>
+    </li>
+
+
+
+          <li class="blog menu-item"><a href="javascript:void(0)">RESPONSIBILITY
+        <span class="drop-icon">▾</span>
+        <label title="Toggle Drop-down" class="drop-icon" for="sm4">▾</label>
+      </a>
+      <input type="checkbox" id="sm4">
+      <ul class="sub-menu">
+        <li><a href="#corporategovernance" class="corporategovernance">Corporate Governance</a></li>
+           <li><a href="#csrstrategy" class="csrstrategy">CSR Strategy</a></li>
+           <li><a href="#esgstrategy" class="csrstrategy">ESG Strategy</a></li>
+
+
+      </ul>
+    </li>
+
+
+
+
+
+
+    <li class="contact menu-item"><a href="javascript:void(0)">CONTACT</a></li>
+
+         <li id="togglecall"  style="    text-align: center;" class="menu-item"><i class="ion-ios-close-empty" style="line-height:49px; font-size: 30px;
+    vertical-align: middle;"></i></li>
+
+
+     <li id="close" style="    text-align: center;" class="menu-item"><i class="ion-ios-close-empty" style="line-height:49px;"></i></li>
+  </ul>
+</nav>
+       <!--
+
+
+
+        <ul class="inline-menu">
+            <li class="about menu-item">COMPANY</li>
+            <li class="portfolio menu-item">PORTFOLIO</li>
+			<li class="investors menu-item">SHAREHOLDERS & INVESTORS</li>
+            <li class="blog menu-item">RESPONSIBILITY</li>
+            <li class="contact menu-item">CONTACT</li>
+            <li id="close" class="menu-item"><i class="ion-ios-close-empty"></i></li>
+        </ul>
+
+        -->
+
+
+
+    </div>
+
+
+    <section class="home" data-vide-bg="https://icon-ad.xyz/esic/esic/video/video_my.mp4" >
+        <div id="lionhero" class="owl-theme"  data-vide-bg="https://icon-ad.xyz/esic/esic/video/video_my.mp4" >
+		<div ></div>
+
+
+
+        </div>
+        <div class="container">
+            <div class="name-block">
+                <div class="name-block-container">
+				<div class="" style="
+    margin-bottom: 30px;
+"><a href="https://icon-ad.xyz/esic/esic-login"  ><img src="https://icon-ad.xyz/esic/esic/images/bannerlogo.png"></a></div>
+
+                    <h1><span>Emirates Strategic Investment Company</span>
+</h1>
+
+
+<span style="
+    color: white;float: left;
+"><a href="https://icon-ad.xyz/esic/esic-login" style="
+    color: white;
+    font-size: 18px;
+">Eng</a> | <a href="https://icon-ad.xyz/esic/esic-login-ar" style="
+    color: white;
+    font-size: 18px;
+">عربى</a></span>
+
+
+                  <!--
+                     <ul class="social">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+
+                    </ul>
+
+                    -->
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="menu-blocks">
+                <div class="about-block menu-block">
+                    <div class="about-block-container">
+                        <h2 class="about menu-item">Company</h2>
+                    </div>
+                </div>
+                <div class="portfolio-block  menu-block">
+                    <div class="portfolio-block-container">
+                        <h2 class="portfolio menu-item">Portfolio</h2>
+                    </div>
+                </div>
+                <div class="investors-block  menu-block">
+                    <div class="investors-block-container">
+                        <h2 class="investors menu-item">Shareholders/<br />Investors</h2>
+                    </div>
+                </div>
+
+				<div class="blog-block  menu-block">
+                    <div class="blog-block-container">
+                        <h2 class="blog menu-item">Responsibility</h2>
+                    </div>
+                </div>
+                <div class="contact-block  menu-block">
+                    <div class="contact-block-container">
+                        <h2 class="contact menu-item">Contact</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="content-blocks about about1">
+                <section class="content" id="about">
+                    <div class="block-content2 " style="margin: 0 0 15px;" id="identity">
+                        <h3 class="block-title">IDENTITY</h3>
+
+
+
+                    </div>
+
+
+
+					       <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Vision</h4>
+
+					   <div class="row">
+
+				  <div class="col-md-3 col-lg-3 col-sm-12">
+					     <img src="https://icon-ad.xyz/esic/esic/images/HH1.jpg">
+					   </div>
+						     <div class="col-md-9 col-lg-9 col-sm-12">
+						  <p>To be a leading international strategic investment company by identifying, optimising and realising the assets and companies in which it invests.</p>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+					       <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Values</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>ESIC’s Corporate Values are founded on:</p>
+						  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">Accountability</li>
+						  <li>Responsibility</li>
+						  <li>Transparency</li>
+						  <li>Fairness</li>
+						  <li>Trust</li>
+						  </ul>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+					       <div class="block-content2" style="margin: 0 0 40px;">
+                        <h4 class="block-title2">Profile</h4>
+
+					   <div class="row">
+				    <div class="col-md-3 col-lg-3 col-sm-12">
+					     <img src="https://icon-ad.xyz/esic/esic/images/HH3.jpg">
+					   </div>
+					     <div class="col-md-9 col-lg-9 col-sm-12">
+						  <p>A prominent investment company Emirates Strategic Investment Company LLC (ESIC) is mandated to achieve significant financial returns through amalgamating assets with a primary focus on real estate, equity investments and other specialized investments, positioning and integrating ESIC’s diversified portfolio within the global economy.</p>
+
+
+					   </div>
+
+
+
+					   </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+					   <div class="block-content " id="history" >
+                        <h3 class="block-title">HISTORY</h3>
+                       	   <div class="row">
+						       <div class="col-md-9 col-lg-9 col-sm-12">
+						  <p> Over the past decade, the Group and its affiliates have engaged in diversified equity investments within prominent companies across various sectors. Some notable investments include First Abu Dhabi Bank (FAB) and Air Arabia. At our firm, we take a systematic approach to evaluating economic drivers and industry fundamentals in order to construct a sustainable, liquid, and long-term investment portfolio. This allows us to produce the best possible risk-adjusted returns by investing in companies that demonstrate sound management, strong financial performance, and strong corporate governance.
+ </p>
+						  <p> Additionally, the Group has redefined the real estate business, modernizing and advancing the industry by fostering a culture of partnerships in which all clients and listings are represented in an ethical and shared environment. Evolving the traditional model of how real estate is practiced, our forward-thinking property experts share their knowledge, areas of influence, contacts and expertise, ensuring clients a better representation and a true competitive edge.
+</p>
+						  <p>Our approach has proven highly successful. Since its inception, the Group has grown an extensive diversified investment portfolio and property management portfolio constituting residential, commercial & retail properties. Additionally, the Group has vast residential & commercial sales experience and established itself as a prominent player in the real estate market, representing many of the country’s most visible & notable properties.</p>
+
+
+					   </div>
+					      <div class="col-md-3 col-lg-3 col-sm-12">
+					     <img src="https://icon-ad.xyz/esic/esic/images/HH2.jpg">
+					   </div>
+
+
+
+					   </div>
+
+
+
+
+                    </div>
+
+
+					   <div class="block-content " id="organisation">
+                        <h3 class="block-title">ORGANISATION</h3>
+
+
+						  		       <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">CEO Message</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p> It all started over a decade ago with the UAE thriving and lending itself to our successful history of organic growth and strategic acquisitions by envisioning we could do things differently. This was the start of the journey that sets us apart today.</p>
+                      <p> We developed a unique platform that equips us to capture opportunities wherever they emerge throughout the UAE. Bringing this vision to a life shaped our new company, and the same attitude remains in place today. The Group remains steadfast and driven by the same values that defined our early days with an entrepreneurial spirit committed to innovation and a focus on the long-term.</p>
+                      <p>As our business evolves and economies transform, we adapt, and our business prolongs. Fundamental to our success is upholding strong corporate governance, instilling a sense of ownership making everyone accountable for their performance through a shared pioneering spirit. At the same time, communication is vital for our culture to remain perpetual.
+ Additionally, we pride ourselves on being ambitious and sincere, fostering ESIC with solid commitments to customers, communities, employees, shareholders and the environment. ESIC’s leadership and vision bring together what we believe are the essential requisites for maintaining the long-term sustainability and growth of our Group.</p>
+                      <p>Through integrated initiatives, ESIC will continue striving toward its vision of industry leadership and sustainability goals. Our commitment will continue to work to extend our performance in areas where results are already strong while diligently identifying the most significant opportunities for continued growth.</p>
+
+                      <p> Thank you for your ongoing interest in ESIC.</p>
+                      <p>Group Chief Executive Officer
+</p>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </section>
+            </div>
+            <div class="content-blocks portfolio portfolio1">
+                <section class="content">
+
+
+				     <div class="block-content" >
+                        <h3 class="block-title" id="investmentmodel" >Portfolio</h3>
+
+
+
+						 <h4 class="block-title2">Investment Model</h4>
+					<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					   <div class="row gridder" style=" ">
+
+
+
+                        <div   class="col-lg-3 col-md-3 col-sm-12 blog-content  gridder-list principles"  data-griddercontent="#principles" >
+                            <div class="blog-image">
+                             <img src="https://icon-ad.xyz/esic/esic/images/Principle.jpg">
+							  <div class="" style="padding: 10px; min-height: 150px;">
+							  <h3 class="portfolio-heading">Principles</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 10px 0px 10px 0px;">ESIC maintains an objective of generating an adequate level of returns by making disciplined investments.</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+                            </div>
+
+
+
+                        </div>
+
+						<div class="gridder-content" id="principles" >
+		<div class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="   ">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Principles</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>ESIC maintains an objective of generating an adequate level of returns by making disciplined investments on behalf of our shareholders and stakeholders. We adhere to a set core of underlying principles that determine our investment approach:
+Identify Opportunities
+Trigger Optimization Strategy
+Realize Value
+Our principles couple into an investment philosophy oriented toward delivering stable returns over the long-term while minimizing risk.</p>
+								  				  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">Identify Opportunities
+</li>
+						  <li>Trigger Optimisation Strategy
+</li>
+						  <li>Realise Value
+</li>
+
+						  </ul>
+								  <p>Our set of principles couple into an investment philosophy that is
+oriented in delivering stable returns over the long-term while
+minimising risk.</p>
+								   </div>
+								   </div>
+								  </div>
+						</div>
+							</div>
+					</div>
+					<div  class="col-lg-3 col-md-3 col-sm-12  blog-content gridder-list identify" data-griddercontent="#identify" >
+
+						    <div class="blog-image">
+                             <img src="https://icon-ad.xyz/esic/esic/images/Identify.jpg">
+
+							  	  <div class="" style=" padding: 10px;min-height: 150px;">
+							  <h3 class="portfolio-heading">Identify</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 10px 0px 10px 0px;">ESIC seek investment opportunities within sectors that generate a satisfactory level ..</p>
+							<a href="#"  style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+								<div  class=" gridder-content" id="identify"   >
+								<div  class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style=" ">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Identify</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>ESIC seek investment opportunities within sectors that generate a satisfactory level of growth potential and a steady recurring revenue stream. We endeavor to identify the best investment opportunities in the sector based on specific and meticulous studies.</p>
+
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div   class="col-lg-3 col-md-3 col-sm-12  blog-content gridder-list transform" data-griddercontent="#transform" >
+
+						    <div class="blog-image">
+                              <img src="https://icon-ad.xyz/esic/esic/images/transform.jpg">
+
+							  		  	  <div class="" style="  padding: 10px;min-height: 150px;">
+							  <h3 class="portfolio-heading">Optimise</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 10px 0px 10px 0px;">ESIC contributes financial, strategic and human resources to drive transformational growth ..</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+					<div   class=" gridder-content" id="transform" >
+					<div   class="row ">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="   ">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Optimise</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>ESIC contributes financial, strategic and human resources to drive transformational growth and expedite value creation of its investments to realise their full potential.</p>
+
+										  <p>Keys To Success:</p>
+										  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">Trigger Growth Levers</li>
+						  <li>Robust Corporate Governance</li>
+						  <li>Adaptation of Organisation</li>
+						  <li>Organic Growth</li>
+						  <li>Innovation</li>
+						  <li>Business Model Enhancement</li>
+						  </ul>
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+                        <div  class="col-lg-3 col-md-3 col-sm-12 blog-content gridder-list enrich" data-griddercontent="#enrich" >
+                             <div class="blog-image">
+                             <img src="https://icon-ad.xyz/esic/esic/images/enrich.jpg">
+
+							  	  		  	  <div class="" style=" padding: 10px;min-height: 165px;">
+							  <h3 class="portfolio-heading">Realise</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 10px 0px 10px 0px;">Though we take long-term views, due to the nature of our fluid business model ..</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+							<div  class="row gridder-content" id="enrich"  >
+							<div  class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  style="  ">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Realise</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>Though we take long-term views, due to the nature of our fluid business model, ESIC has no timing imperatives and can therefore exit investments at the right time and/or by realising satisfactory value growth.</p>
+
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+						<br />
+						<br />
+
+							 <h4 class="block-title2"  id="groupinvestments">Group Investments</h4>
+
+						<br />
+
+                				   <div class="row gridder" style=" ">
+
+
+					     <div  class="col-xl-3 col-lg-6 col-md-6 blog-content  gridder-list rently_property" data-griddercontent="#rently_property" >
+
+
+						<div class="blog-image">
+                           <img src="https://icon-ad.xyz/esic/esic/images/Real-Estate.jpg">
+
+							  	  	  		  	  <div class="" style=" padding: 10px;min-height: 175px;">
+							  <h3 class="portfolio-heading">Rental Property Portfolio</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">As a full-service property management agency, the Group represents clients exhibiting ..</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+					<div class="gridder-content" id="rently_property" >
+						<div class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Rental Property Portfolio</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>As a full-service property management agency, the Group represents clients exhibiting its extensive range of asset classes, including a broad spectrum of property management services. The Group’s comprehensive recurring income stream of its real estate investment portfolio consists of both residential and commercial units, totaling more than 3,500 units. The commercial units comprise mainly retail stores and offices leased to third parties. The real estate portfolio is primarily located in Abu Dhabi and Dubai.
+</p>
+
+								   <p>
+Please visit our real estate company page for more information: East & West International Group: <strong>www.eastandwest.ae</strong> <a href="https://www.eastandwest.ae/" style="text-decoration: underline;" target="_blank">www.eastandwest.ae</a></p>
+								   </div>
+								   </div>
+								  </div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div  class="col-xl-3 col-lg-6 col-md-6  blog-content gridder-list development_property" data-griddercontent="#development_property" >
+
+
+						<div class="blog-image">
+                           <img src="https://icon-ad.xyz/esic/esic/images/HH1.jpg">
+
+							  	  	  		  	  <div class="" style=" padding: 10px;min-height: 175px;">
+							  <h3 class="portfolio-heading">Development Property Portfolio</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">The Group has a long-standing presence in real estate acquisition & development..</p>
+							<a href="#" style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+					<div  class=" gridder-content" id="development_property"   >
+								<div  class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Development Property Portfolio</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>The Group has long standing presence in real estate acquisition & development having particular focus on iconic residential and commercial project investments in the UAE. The depth and expertise the Group’s real estate segment yields a competitive advantage in identifying attractive high yielding real estate investment opportunities. The Group’s due diligence process evaluates the supply and demand dynamics in the selected market and repositions assets to enhance its existing land bank portfolio value.</p>
+
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+                		<div  class="col-xl-3 col-lg-6 col-md-6  blog-content gridder-list financial_and_equity_investment" data-griddercontent="#financial_and_equity_investment" >	<div class="blog-image">
+                           <img src="https://icon-ad.xyz/esic/esic/images/Financial_and_Equity_Investment.jpg">
+
+
+							  	  	  		  	  <div class="" style="  padding: 10px;min-height: 175px;">
+							  <h3 class="portfolio-heading">Financial & Equity Investments</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 10px 0px 10px 0px;">The Group’s global diversified investment portfolio is a strong risk-adjusted..</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more > </a>
+							  </div>
+
+
+
+                            </div>
+
+                        </div>
+
+ 	<div  class=" gridder-content" id="financial_and_equity_investment"   >
+
+								<div  class="row">	<div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Financial & Equity Investments</h3>
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									  <p>The Group’s global diversified investment portfolio is a solid risk-adjusted multi-strategy serving mature & emerging markets. Our approach is systematic, and our experience in global markets enabled us to avoid singular country strategies that experience downturns, are highly volatile, or have become saturated. We maintain our position in pursuing opportunities to build and grow sustainable, successful businesses in our target markets.</p>
+								  <p>Our investment process includes detailed due diligence identifying companies with the potential to create sustainable, long-term value throughout shifting economic cycles. Our investment committee process for vetting transactions and continuous expansion enables us to maintain best practices.
+</p><p>Throughout the course of executing investments and operating portfolio companies, the Group fostered a team of professionals possessing sector-specific expertise, forging strong relationships with leading institutions and influential individuals. Moreover, the Group holds an extensive background in the industries it invests with a successful history of investing in and supporting companies through an active partnership with other shareholders to pursue areas of improvement. .  
+</p>
+								   </div>
+								   </div>
+								  </div>
+						</div>
+						</div>
+					</div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </section>
+            </div>
+
+
+			           <div class="content-blocks investors investors1">
+                <section class="content" id="investors">
+
+
+
+
+
+<div id="loadcontent">
+
+
+<div id="mysecurity">
+
+    	<div class="col-md-12">
+
+
+
+							        <div class="block-content" style="margin: 0 0 15px;">
+					   <div class="row">
+			     <div class="col-md-6 col-lg-6 col-sm-6">
+						  <h3 class="block-title">Welcome to the Investor Dashboard</h3>
+
+					   </div>
+
+
+
+
+					     <div class="col-md-6 col-lg-6 col-sm-6">
+						 <form id="contactFormtest" class="contact-form shake">
+
+								   <div class="form-group" style="text-align:right;">
+							<?php echo do_shortcode('[wp_login_form redirect="https://icon-ad.xyz/esic/esic-login/"]'); ?>
+                      </div>
+					  </form>
+
+					   </div>
+					   </div>
+					   </div>
+
+
+
+
+
+
+
+        <div class="block-content" id="regulatedinformation" style="margin: 0 0 15px;">
+
+		<h3 class="block-title" >REGULATED INFORMATION</h3>
+
+
+
+        <!--<h4 class="block-title2" style="margin-top:15px;">Credit Opinion | 1 July 2022</h4>-->
+        <!--<h4 class="block-title2" style="margin-top:15px;">Summary:</h4>-->
+        <!--<div class="row">-->
+
+        <!--<div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">-->
+        <!--    <p>Emirates Strategic Investments Company: Update to credit analysis.</p>-->
+        <!--    <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--1-->
+
+
+        <h4 class="block-title2" style="margin-top:15px; margin-bottom:15px;">Emirates Strategic Investments Company</h4>
+
+
+
+
+        <h4 class="block-title2" style="margin-top:15px;">Credit Opinion | 1 July 2022</h4>
+        <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+        <div class="row">
+
+        <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+            <p>Emirates Strategic Investments Company: Update to credit analysis.</p>
+            <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+            </div>
+        </div>
+        <!--1-->
+
+
+
+
+
+        <h4 class="block-title2" style="margin-top:15px;">Announcement Of Periodic Review | 17 March 2022</h4>
+        <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+                <p>Moody's announces completion of a periodic review for a group of REITs and Other Commercial Property Firms.</p>
+                <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+            </div>
+        </div>
+        <!--1-->
+
+        <h4 class="block-title2" style="margin-top:15px;">Credit Opinion | 21 Jun 2021</h4>
+        <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+        <div class="row">
+
+        <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+            <p>Emirates Strategic Investments Company: Update to credit analysis.</p>
+            <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+            </div>
+        </div>
+        <!--1-->
+
+<!--2-->
+
+<h4 class="block-title2" style="margin-top:15px;">Announcement of Periodic Review | 27 Apr 2021</h4>
+<h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+
+    <div class="row">
+
+        <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+
+
+            <p>Moody's announces completion of a periodic review of ratings of Emirates Strategic Investments Company.</p>
+
+            <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com" class=" ">click here.</a></p>
+
+        </div>
+    </div>
+    <!--2-->
+
+    <!--3-->
+    <h4 class="block-title2" style="margin-top:15px;">Credit Opinion | 23 Jul 2020</h4>
+    <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+
+                <p>Emirates Strategic Investments Company: Update to credit analysis.</p>
+                <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+
+            </div>
+        </div>
+        <!--3-->
+
+
+        <!--4-->
+        <h4 class="block-title2" style="margin-top:15px;">Announcement of Periodic Review | 02 Jun 2020</h4>
+        <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+
+
+                    <p>Moody's announces completion of a periodic review of ratings of Emirates Strategic Investments Company.</p>
+
+                    <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+
+
+
+                </div>
+            </div>
+
+            <!--4-->
+
+
+            <!--5-->
+            <h4 class="block-title2" style="margin-top:15px;">Credit Opinion | 01 Jul 2019</h4>
+            <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+
+                        <p>Emirates Strategic Investments Company: New issuer - Assignment of first-time Baa3 rating.</p>
+                        <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+
+                    </div>
+                </div>
+                <!--5-->
+
+
+                <!--6-->
+
+                <h4 class="block-title2" style="margin-top:15px;">Rating Action | 01 Jul 2019</h4>
+                <h4 class="block-title2" style="margin-top:15px;">Summary:</h4>
+                    <div class="row">
+
+                        <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top:10px;">
+
+                            <p>Moody's assigns first-time Baa3 rating to Emirates Strategic Investments Company; stable outlook.</p>
+                            <p>To view the full report, please <a target="_blank" style="" href="https://www.moodys.com/" class=" ">click here.</a></p>
+                        </div>
+                    </div>
+                    </div>
+					       <div class="block-content2" id="analystcoverage" style="margin: 0 0 15px; margin-top:20px;">
+                        <h3 class="block-title">ANALYST COVERAGE</h3>
+
+
+                    </div>
+
+
+
+					 <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Rating</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>Rating Action: Moody’s assigns (P)Baa3 rating
+</p>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+
+
+					     <div class="block-content2" id="keyfactors" style="margin: 0 0 15px;">
+                        <h3 class="block-title">KEY FACTORS </h3>
+                        <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+
+				 </div>
+					   </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+					 <div class="block-content2" style="margin: 0 0 5px;">
+
+
+
+
+					    <h4 class="block-title2">Assets Under Management & Net Asset Value </h4>
+					   <p>Group currently operates in three strategic business segments:</p>
+
+					   <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Property Management:</span>
+                                The Group owns and manages a portfolio of approximately over 3,500 units, a combination of residential and commercial units in the UAE. The Group tenant profiles include Government Departments, Foreign Diplomatic missions, Corporates and others. Most of the tenants have been with the Group for a long time as the Group maintains a strong relationship with its tenants by providing timely services and adequate property management. </li>
+						  <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Real Estate Investment (Residential & Commercial Development): </span> this business segment is carried out to enhance the value of the existing undeveloped plots of land that the Group owns in Dubai and Abu Dhabi. It is principally undertaken through joint venture partnerships with internationally recognized property developers and is designed to deliver a return on the initial land invested in the project by the Group through the eventual sale of the properties and/or land developed. The Group also undertakes development projects intending to retain the developed property as a rental property to grow its portfolio of investment properties. Currently, the Group has an undeveloped land bank of approx. 1 million sq.ft. Major ongoing real-estate development projects for sale can be categorized as follows:
+
+</li>
+
+
+						  </ul>
+
+					      <ul style="      list-style: circle;  padding-left: 40px;">
+						  <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Joint Venture Arrangement</span></li>
+
+
+
+						  </ul>
+
+
+						       <ul style="      list-style: square;  padding-left: 60px;">
+
+
+
+                         <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Six Senses The Palm, Dubai</span> - The objective of the Six Senses project is to develop an ultra-luxury waterfront project on West Crescent of Palm Jumeirah, covering an area of 700,000 sq. Ft.                          The development will include 172 ultra-luxury residences, to date, approximately 70% of which have been sold. The residential development will be a branded residence that includes, 131 penthouses, a 60-key hotel along with the branded residence, 32 sky villas, and 9 signature beachfront villas. All housing units will be managed by Six Senses, which will provide residents with privileged access to the Six Senses Hotel’s top-class amenities in addition to the private beach, marina access, and much more.  The construction of the project started in 2022, and the estimated date of completion is 2025.
+                        </li>
+
+
+
+
+
+						  <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Marina Gate Project</span> - The objective was to develop three towers which are made-up of a mix of affordable and high-end luxury apartments, with state-of-the-art facilities in the Dubai Marina comprising of over 1,400 residential units. First two towers have been the real success story for the Group. First tower was completed and handed over in 2018 and second tower has been successfully completed and handed over in 2019. Third tower was also completed and handed over in 2020. Third tower included a branded residence with a tie-up with Jumeirah Hotels & Resorts, comprising of branded residential serviced apartment units specifically marketed to high-end customers. All the residential and retail inventory in the Project has been completely sold.
+
+                        </li>
+
+                          <li style=""><span style="font-weight: 600; font-size: 1.1rem;">The Peninsula Project</span> -  The objective of this project is to develop a master waterfront development spanning 3.4 million sq. ft, comprising 6 premium residential towers, commercial facilities, and community amenities. Located in Business Bay's best location, the development offers panoramic views of the Dubai Canal on three sides, as well as easy access to Dubai's most sought-after locations. The sales of the Peninsula project launched in Q3 2021 and more than 2,200 units of the project have already been sold with an average price ranging from AED 1800 to AED 3900 per sq. ft. Investing in the Peninsula project is expected to yield significant returns with 100% of the sales achieved within weeks of the launch date, due to the detailed planning and high level of build quality.
+
+
+                         <!--<span style="color:#0b84c7;font-size:18px;">*</span>-->
+
+                        </li>
+
+
+
+
+
+						  </ul>
+
+
+
+					       <ul style="      list-style: circle;  padding-left: 40px;">
+						   <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Residential Projects Developed for Investment</span> - The Group has recently completed the development of the following residential projects for long-term lease in the UAE:</li>
+
+
+
+						  </ul>
+
+
+					   	       <ul style="      list-style: square;  padding-left: 60px;">
+
+                             <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Nasayem Building</span>, In 2022, ESIC completed construction of a residential tower located in Abu Dhabi (Saadiyat Island) for long-term lease in the UAE with 8 three-bedroom Duplex , 40 two-bedroom, 29 one-bedroom and  38 Studios and nine commercial units.
+                             <!--<span style="color:#0b84c7;font-size:18px;">**</span>-->
+
+                            </li>
+
+
+						  <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Al Arabia Tower</span>, a residential tower located in Abu Dhabi with 72 three-bedroom apartments and five commercial units, with a 99% occupancy rate for the residential units; and<span style="color:#0b84c7;font-size:18px;">*</span>
+
+                        </li>
+                          <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Lulu Tower</span>, a residential tower located in Abu Dhabi with 72 two-bedroom apartments and five commercial units, with a 100% occupancy rate for the residential units. <span style="color:#0b84c7;font-size:18px;">*</span>
+
+
+                        </li>
+                        			 <li style="
+                            list-style: none;
+                            background-color: #f1f3f6;
+                            padding: 10px;
+                            margin-top: 10px;margin-bottom:10px;
+                            border-radius: 5px;
+                        "><span style="color:#0b84c7;font-size:18px;">*</span> Both residential towers were completed in Q3 2019 and based on strong demand for high-quality residential units, were fully occupied within the span of the first three months of 2020.
+                         </li>
+
+
+
+
+
+
+
+
+                        <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Labor camp</span>, with 400 rooms located in Jabel Ali – Dubai.
+
+
+						  </li> There are several residential projects under construction for long-term lease in the UAE, which will be completed in the coming years.
+                         </li>
+
+						  </ul>
+
+
+					   	   <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style=""><span style="font-weight: 600; font-size: 1.1rem;">Financial Investments:</span> this business segment focuses on both public and private equity investments in order to diversify the Group’s revenue. The Group makes strategic investments in GCC companies across a number of different sectors, including the financial services, insurance, aviation and real estate development sectors. Currently, the Group’s financial investments include its shareholdings in First Abu Dhabi Bank PJSC (“FAB”), Abu Dhabi National Takaful Company PSC (“National Takaful”), Al Qudra Holding, Air Arabia PJSC (“Air Arabia”), Emaar Development PJSC (“Emaar”), and Dubai Islamic Bank PJSC.
+
+</li>
+
+
+						  </ul>
+
+
+
+					                        <div class="row">
+
+					<div class="col-md-6 col-lg-6 col-sm-6">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2018 Financial Results</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 540 million<br>
+Total Profit = AED 396 million<br>
+Total Comprehensive Income = AED 888 million
+</h5>						 </div>
+
+
+<div class="col-md-6 col-lg-6 col-sm-6">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2019 Q1  Financial Results</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 186 million<br />
+Total Profit = AED 164 million<br />
+Total Comprehensive Income = AED 324 million
+</h5>						 </div>
+
+
+
+
+
+
+
+					   </div>
+					   <p style="margin-top:10px; margin-bottom:10px;text-align:center;">In Q1 2019, major revenue stream comprise of recurring rental income, share of results of joint ventures and dividend income from financial investments.
+</p>
+
+<div class="row" style=" margin-bottom:15px;">
+<div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+
+<div class="col-md-10 col-lg-10 col-sm-10">
+<div style="
+        text-align: center;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+"><h4 style="
+    color: #2ca2d9;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+">Total Assets as at 31 March 2019 = over AED 7.6 billion
+</h4></div>
+			 </div>
+			 <div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+				 </div>
+
+
+
+
+
+
+
+
+
+                              <div class="row">
+
+					<div class="col-md-12 col-lg-12 col-sm-12">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2019 Financial Results</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 439 million<br>
+Total Profit = AED 206 million<br>
+Total Comprehensive Income = AED 423 million
+</h5>						 </div>
+
+
+
+					   </div>
+
+
+                     <p style="margin-top:10px; margin-bottom:10px;text-align:center;">In 2019, major revenue stream comprise of recurring rental income, share of results of joint ventures and dividend income from financial investments.
+</p>
+
+
+
+             <div class="row" style=" margin-bottom:15px;">
+<div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+
+<div class="col-md-10 col-lg-10 col-sm-10">
+<div style="
+        text-align: center;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+"><h4 style="
+    color: #2ca2d9;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+">Total Assets as at 31 December 2019 = over AED 10.4 billion
+</h4></div>
+			 </div>
+			 <div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+				 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              <div class="row">
+
+					<div class="col-md-12 col-lg-12 col-sm-12">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2020 1<sup>st</sup> Half Rresults</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 320 million<br>
+Total Profit = AED 144 million<br>
+Total Comprehensive Income = AED -698 million
+</h5>						 </div>
+
+
+
+					   </div>
+
+
+                     <p style="margin-top:10px; margin-bottom:10px;text-align:center;">In 2020, major revenue stream comprise of recurring rental income, share of results of joint ventures and dividend income from financial investments. </p>
+
+
+
+             <div class="row" style=" margin-bottom:15px;">
+<div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+
+<div class="col-md-10 col-lg-10 col-sm-10">
+<div style="
+        text-align: center;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+"><h4 style="
+    color: #2ca2d9;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+">Total Assets as at 30 June 2020 = over AED 9.7 billion
+</h4></div>
+			 </div>
+			 <div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+				 </div>
+
+
+
+
+
+
+
+
+
+
+                              <div class="row">
+
+					<div class="col-md-12 col-lg-12 col-sm-12">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2020  Financial Results</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 510 million<br>
+Total Profit = AED 180 million<br>
+Total Comprehensive Income = AED - 295 million
+</h5>						 </div>
+
+
+
+					   </div>
+
+
+                     <p style="margin-top:10px; margin-bottom:10px;text-align:center;">In 2020, major revenue stream comprises of recurring rental income, share of results of joint ventures and dividend income from financial investments. </p>
+
+
+
+             <div class="row" style=" margin-bottom:15px;">
+<div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+
+<div class="col-md-10 col-lg-10 col-sm-10">
+<div style="
+        text-align: center;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+"><h4 style="
+    color: #2ca2d9;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+">Total Assets as at 31 December 2020 = over AED 10 billion
+</h4></div>
+			 </div>
+			 <div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+				 </div>
+
+
+
+
+
+
+                   <!--sara-->
+
+
+
+                          <div class="row">
+
+					<div class="col-md-12 col-lg-12 col-sm-12">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2021 1<sup>st</sup> Half Results</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 380 million<br>
+Total Profit = AED 204 million<br>
+Total Comprehensive Income = AED 1020 million
+</h5>						 </div>
+
+
+
+					   </div>
+
+
+ <p style="margin-top:10px; margin-bottom:10px;text-align:center;">In 2021, major revenue stream comprise of recurring rental income, share of results of joint ventures and dividend income from financial investments.</p>
+
+
+
+             <div class="row" style=" margin-bottom:15px;">
+<div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+
+<div class="col-md-10 col-lg-10 col-sm-10">
+<div style="
+        text-align: center;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+"><h4 style="
+    color: #2ca2d9;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+">Total Assets as at 30 June 2021 = over AED 11 billion
+</h4></div>
+			 </div>
+			 <div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+				 </div>
+
+
+
+<div class="row">
+
+					<div class="col-md-12 col-lg-12 col-sm-12">
+<div style="
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2ca2d9;
+"><h4 style="
+    color: white;
+    text-align: center;
+">2021  Financial Results</h4></div>
+<h5 style="
+    background-color: #f1f3f6;
+    text-align: center;
+    text-transform: none;
+    line-height: 25px;
+    padding: 5px;
+">Total Revenue = AED 594 million<br>
+Total Profit = AED 235 million<br>
+Total Comprehensive Income = AED 1,435 million
+</h5>						 </div>
+
+
+
+					   </div>
+ <p style="margin-top:10px; margin-bottom:10px;text-align:center;">In 2021, major revenue stream comprises of recurring rental income, share of results of joint ventures and dividend income from financial investments.</p>
+<div class="row" style=" margin-bottom:15px;">
+<div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+
+<div class="col-md-10 col-lg-10 col-sm-10">
+<div style="
+        text-align: center;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+"><h4 style="
+    color: #2ca2d9;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+">Total Assets as of 31 December = over AED 11.4 billion
+</h4></div>
+			 </div>
+			 <div class="col-md-1 col-lg-1 col-sm-1">
+</div>
+				 </div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+        <div class="col-md-12 col-lg-12 col-sm-12">
+            <div style="text-align: center; color: white; background-color: #2ca2d9;">
+                <h4 style="color: white;text-align: center; padding: 5px;">2022 1<sup>st</sup> Half Results</h4>
+                <div>
+                    <h5 style="background-color: #f1f3f6;text-align: center;text-transform: none;line-height: 25px;padding: 5px;">
+                        Total Revenue = AED 286 million<br>
+                        Total Profit = AED 116 million<br>
+                        Total Comprehensive Income = AED 494 million
+                    </h5>
+                </div>
+            </div>
+            <p style="margin-top:10px; margin-bottom:10px;text-align:center;">
+                In 2022, major revenue stream comprises of recurring rental income, share of results of joint ventures and dividend income from financial investments.
+            </p>
+
+            <div class="row" style=" margin-bottom:15px;">
+
+                <div class="col-md-1 col-lg-1 col-sm-1"></div>
+
+                <div class="col-md-10 col-lg-10 col-sm-10">
+                    <div style=" text-align: center;padding: 5px;border: 1px solid #bcbcbc;">
+                        <h4 style="
+                                color: #2ca2d9;
+                                text-align: center;
+                                text-transform: none;
+                                font-size: 18px;
+                            ">
+                            Total Assets as of 30 June 2022 = over AED 11.9 billion
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-1 col-sm-1"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+					</div>
+
+
+
+
+
+
+
+
+
+                    <?php if( have_rows('consolidated_financial_statements') ): ?>
+                     	 <div class="block-content2" style="margin: 0 0 20px;">
+                    <h4 class="block-title2">Consolidated Financial Statements</h4>
+
+							<div class="row">
+								<?php while( have_rows('consolidated_financial_statements') ) : the_row();
+									$image = get_sub_field('image');
+									$title = get_sub_field('title');
+									$link = get_sub_field('upload_pdf'); ?>
+										<div class="col-md-4 col-lg-4 col-sm-12" style="text-align:center;    padding-bottom: 15px;">
+											 <img style="width:55%;padding-bottom:5px;" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+											<br />
+											<p style="padding-left: 25px;" class="font-weight-400"><b><?php echo $title; ?></b></p><p style="padding-left: 25px;" class="font-weight-400"><a  style="margin:0px;padding: 5px 5px;text-transform: capitalize;" target="_blank" href="<?php echo esc_url( $link['url'] ); ?>" class="btn selected">Download</a></p>
+										</div>
+								<?php endwhile; ?>
+							</div>
+			           </div>
+					   <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 <div class="block-content"  id="investorsdomain" style="margin: 0 0 15px;">
+                        <h4 class="block-title">INVESTORS DOMAIN</h4>
+
+                    </div>
+
+
+					 <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Agenda</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>ESIC financial year is the calendar year up to and including 31 December. Annual results are announced within 120 days after 31st of Dec of the following year. In addition, ESIC reports interim results for the six months to 30th of June each year, which are announced within 90 days after the end of the relevant interim period.
+</p>
+
+			<p>To stay informed of current affairs concerning ESIC, we suggest that you record key ESIC events in your diary - dividend payment date, key financial reporting dates and private stakeholder meetings. </p>
+
+
+
+
+
+
+
+
+
+				  <p>Key financial reporting dates:</p>
+
+
+				   <p class="font-weight-400" style="margin-bottom: 0px;"><b>2022 </b></p>
+
+				  	    <p class="font-weight-400" style="margin-bottom: 0px;"><b>Annual Results – December 31st </b></p>
+
+				   <p class="font-weight-400" style="margin-bottom: 0px;"><b>1st Half Results – June 30th</b></p>
+
+			<p></p>
+
+				  		  	   <p class="font-weight-400" style="margin-bottom: 0px;"><b>2021 </b></p>
+
+				  	    <p class="font-weight-400" style="margin-bottom: 0px;"><b>Annual Results – December 31st </b></p>
+
+				   <p class="font-weight-400" style="margin-bottom: 0px;"><b>1st Half Results – June 30th</b></p>
+
+
+		  <p></p>
+
+
+
+
+
+				   <p class="font-weight-400" style="margin-bottom: 0px;"><b>2020 </b></p>
+				       <p class="font-weight-400" style="margin-bottom: 0px;"><b>Annual Results – December 31st </b></p>
+				   <p class="font-weight-400" style="margin-bottom: 0px;"><b>1st Half Results - June 30th</b></p>
+				   		   <p class="font-weight-400" style="margin-bottom: 0px;"><a href="https://esic.ae/investor_call/" target="_blank"><b>Investor Call - June 18th </b></a></p>
+
+		  <p></p>
+				  <p class="font-weight-400" style="margin-bottom: 0px;"><b>2019</b></p>
+				   <p class="font-weight-400" style="margin-bottom: 0px;"><b>Post Sukuk</b></p>
+				   		   <p class="font-weight-400" style="margin-bottom: 0px;"><b>Annual Results - 31-December </b></p>
+
+	<p></p>
+
+
+
+					  <p class="font-weight-400" style="margin-bottom: 0px;"><b>Pre -Sukuk</b></p>
+<p>1st Quarter Results
+
+</p>
+
+					  <p class="font-weight-400" style="margin-bottom: 0px;"><b>2016, 2017 , 2018 </b></p>
+<p>Annual Results
+
+</p>
+
+
+
+
+
+
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+					 <div class="block-content2"  style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Becoming an Investor</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>There are many reasons to become an ESIC investor, from the performance of the business sector to the attractive long-term returns.</p>
+						  <p>ESIC is a partnership, a team supported by a professional network, the investment managers and our stakeholders.</p>
+						  <p>
+Sharing this privileged partnership strengthens stability as the timeline, vision, and interests align.
+</p>
+						  <p>ESIC generally seeks long-term sustainable value creation stemming from responsible investments, which combines stunning performance and measured risk at the core of our strategy.</p>
+
+					   </div>
+					   </div>
+
+                    </div>
+					 <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Up-to-date</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>Good governance requires good dialogue, ESIC promises to deliver quality information that constantly meets stakeholder expectations via our extensive communication tools comprising various complementary media in different formats</p>
+
+
+					      <p class="font-weight-400"><b>The Stakeholders Letter</b></p>
+						   				  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">ESIC will always maintain open communication lines with its stakeholders pertaining to events, results, strategy updates, market information and many other relevant material.</li>
+
+
+						  </ul>
+
+
+
+
+
+
+					       <p class="font-weight-400"><b>Financial Information</b></p>
+						   				  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">You can find all the press releases, annual reports, registration documents, presentations and much more in the media center.</li>
+
+
+						  </ul>
+
+
+
+					   </div>
+					   </div>
+
+
+
+
+                    </div>
+
+
+
+					 <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Your Opinion Matters</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>ESIC strives to provide individual stakeholders with more than just the comprehensive, tailored information available to all investors. ESIC has given another commitment; to promote substantial dialogue on our key centers of interest, particularly strategy and results. To this end, we arrange a series of opportunities for discussion.</p>
+
+
+
+					       <p class="font-weight-400"><b>We Seek Your Opinion</b></p>
+						   				  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">ESIC will be conducting investor surveys in order to understand your needs and concerns. These surveys will be sent to all registered stakeholders, and we encourage your participation. The objective of these surveys is to be as expressive as possible, so your input is very important.
+</li>
+
+						  </ul>
+
+
+
+
+
+
+
+					       <p class="font-weight-400"><b>Web Conferences</b></p>
+						   				  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">ESIC provides an opportunity for dialogue to keep stakeholders informed under conditions similar to those offered to investment professionals. ESIC will arrange a web conference for its individual stakeholders on the publication of the annual and half-year results.
+</li>
+
+						  </ul>
+
+
+
+
+
+
+
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+					 <div class="block-content2" id="investormediacenter" style="margin: 0 0 15px;">
+
+                        <h4 class="block-title" >Investor Media Center</h4>
+
+
+
+
+	   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+
+
+
+					         		         	 <div class="block-content2" style="margin: 0 0 5px;">
+                        <h4 class="block-title2">Most Recent</h4>
+
+                         <div class="row" style="margin: 0 0 15px; ">
+
+
+
+
+											 		 <div class="col-md-6 col-lg-6 col-sm-12" style="padding:0px;">
+											 	<div style="
+    margin: 15px 0 15px;
+">  <span style="
+    background-color: black;
+    padding: 22px;
+" ><img src="https://icon-ad.xyz/esic/esic/images/publish/lseg-logo.png" style="width:41%;"></span></div>
+											 		     <p  class="font-weight-400"><b>London Stock Exchange welcomes Emirates Strategic Investments Company celebrating its inaugural Sukuk Bond listing</b></p>
+											 	<p>On 23 July 2019, Emirates Strategic Investments Company (“ESIC”), 100% owned by His Highness Sheikh Mansour Bin Zayed Al Nahyan, rated Baa3 by Moody’s. <a href="https://www.lseg.com/markets-products-and-services/our-markets/london-stock-exchange/equities-markets/raising-equity-finance/market-open-ceremony/london-stock-exchange-welcomes-emirates-strategic-investments-company-celebrating-its-inaugural-sukuk-bond-listing" target="_blank">Read More</a></p>	     <div style="margin: 0 0 5px; "><img src="https://esic.ae/images/publish/lseg.com__466.jpg"></div>
+
+											 		 <a href="https://www.lseg.com/markets-products-and-services/our-markets/london-stock-exchange/equities-markets/raising-equity-finance/market-open-ceremony/london-stock-exchange-welcomes-emirates-strategic-investments-company-celebrating-its-inaugural-sukuk-bond-listing" target="_blank">Read the full story here</a>
+											 		 </div>
+
+
+
+
+                       </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="block-content2" style="margin: 0 0 5px;">
+						<h4 class="block-title2">Press Releases</h4>
+						<?php if( have_rows('press_release') ): ?>
+							<div class="row">
+								<?php while( have_rows('press_release') ) : the_row();
+									$image = get_sub_field('image');
+									$title = get_sub_field('title');
+									$link = get_sub_field('upload_file'); ?>
+										<div class="col-md-4 col-lg-4 col-sm-12" style="text-align:center;    padding-bottom: 15px;">
+											 <img style="width:55%;padding-bottom:5px;" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+											<br />
+											<p style="padding-left: 25px;" class="font-weight-400"><b><?php echo $title; ?></b></p><p style="padding-left: 25px;" class="font-weight-400"><a  style="margin:0px;padding: 5px 5px;text-transform: capitalize;" target="_blank" href="<?php echo esc_url( $link['url'] ); ?>" class="btn selected">Download</a></p>
+										</div>
+								<?php endwhile; ?>
+							</div>
+						<?php endif; ?>
+                    </div>
+                    <div class="block-content2" style="margin: 0 0 5px;">
+						<h4 class="block-title2">Publications</h4>
+					</div>
+
+					<div class="block-content2" style="margin: 0 0 5px;">
+						<h4 class="block-title2">Presentations</h4>
+						<?php if( have_rows('presentations') ): ?>
+							<div class="row">
+								<?php while( have_rows('presentations') ) : the_row();
+									$image = get_sub_field('image');
+									$title = get_sub_field('title');
+									$link = get_sub_field('upload_file'); ?>
+										<div class="col-md-4 col-lg-4 col-sm-12" style="text-align:center;    padding-bottom: 15px;">
+											 <img style="width:55%;padding-bottom:5px;" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+											<br />
+											<p style="padding-left: 25px;" class="font-weight-400"><b><?php echo $title; ?></b></p><p style="padding-left: 25px;" class="font-weight-400"><a  style="margin:0px;padding: 5px 5px;text-transform: capitalize;" target="_blank" href="<?php echo esc_url( $link['url'] ); ?>" class="btn selected">Download</a></p>
+										</div>
+								<?php endwhile; ?>
+							</div>
+						<?php endif; ?>
+					</div>
+					<div class="block-content2" style="margin: 0 0 5px;">
+						<h4 class="block-title2">Offering Circular</h4>
+						<?php if( have_rows('offering_circular') ): ?>
+							<div class="row">
+								<?php while( have_rows('offering_circular') ) : the_row();
+									$image = get_sub_field('image');
+									$title = get_sub_field('title');
+									$link = get_sub_field('upload_file'); ?>
+										<div class="col-md-4 col-lg-4 col-sm-12" style="text-align:center;    padding-bottom: 15px;">
+											 <img style="width:55%;padding-bottom:5px;" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+											<br />
+											<p style="padding-left: 25px;" class="font-weight-400"><b><?php echo $title; ?></b></p><p style="padding-left: 25px;" class="font-weight-400"><a  style="margin:0px;padding: 5px 5px;text-transform: capitalize;" target="_blank" href="<?php echo esc_url( $link['url'] ); ?>" class="btn selected">download</a></p>
+										</div>
+								<?php endwhile; ?>
+							</div>
+						<?php endif; ?>
+                    </div>
+
+
+
+
+
+
+
+					   </div>
+					   </div>
+
+
+
+
+
+                    </div>
+
+                    				 <div class="block-content2" id="investorfaqs" style="margin: 0 0 15px;">
+
+					   <h4 class="block-title" >Investor FAQ<span style="text-transform: lowercase;">s</span></h4>
+
+
+						     <div class="row">
+
+					            <div class="col-md-12 col-lg-12 col-sm-12">
+						             <p>Visit our frequently asked questions to find additional information about ESIC Sukuk, Financial Reporting, Funding & Use Of Proceeds, Ownership & Company Structure.</p>
+
+									 <style>
+.btn-link {
+    font-weight: 400;
+    color: #000000;
+	    padding: 0;
+		}
+.mybtn{
+
+display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin:0px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-transform: none;
+        letter-spacing: normal;
+}
+
+
+.mybtn:focus{
+    outline: 0;
+    color: #000;
+
+}
+.mybtn:hover{
+
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin:0px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    text-transform: none;
+        letter-spacing: normal;
+}
+
+.mybtn:avive{
+
+       display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin:0px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    text-transform: none;
+        letter-spacing: normal;
+}
+
+
+
+.md-accordion .card {
+    overflow: visible;
+    box-shadow: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0
+}
+.accordion .card:first-of-type,
+.md-accordion .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 1px solid #e0e0e0
+}
+.accordion .card .card-header {
+    border-bottom: 0;
+   padding: 0.5rem 0.3rem;
+    background: 0 0
+}
+.accordion .card .card-header .card-title {
+    font-weight: 400
+}
+.accordion .card .card-header a {
+    transition: ease-in-out .3s
+}
+.accordion .card .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg)
+}
+.accordion .card .fa-angle-down {
+    float: right;
+        margin-top: 6px;
+}
+
+.accordion .card .fa-angle-up {
+    float: right;
+        margin-top: 6px;
+}
+
+
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0rem 0rem 0.5rem 1rem;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+</div>
+
+<main role="main" class="container pb-4">
+  <div class="row">
+    <div class="col-md-12 blog-main">
+
+
+
+
+
+
+
+
+
+
+
+          <h4 class="pb-4 pt-4 text-center ">
+ESIC FUNDING & USE OF PROCEEDS:
+      </h4>
+
+
+
+
+
+
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="heading3">
+      <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        <button class="mybtn mybtn-link" type="button">
+     How much Sukuk does ESIC intend to issue?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+
+    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+      <div class="card-body">
+      <p>ESIC has established US$ 1 billion MTN program. the new remaining issuing size is US$ 400 million. ESIC has no plan to issue sukuk for the foreseeable future.</p>
+
+	  </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading4">
+      <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        <button class="mybtn mybtn-link " type="button">
+       What is the use of proceeds of the SUKUK?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+      <div class="card-body">
+<p>We seek investment opportunities within sectors that generate a satisfactory level of growth potential and a steady recurring revenue stream. We endeavor to identify the best investment opportunities in the sector based on specific and meticulous studies.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+    <div class="card">
+    <div class="card-header" id="heading5">
+      <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        <button class="mybtn mybtn-link " type="button">
+Have assets already been identified to invest in?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+      <div class="card-body">
+<p>Yes. strategic and high yielding assets has been identified and we are in the process of closing few deals with average yield of 9.5% annually.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+    <div class="card">
+    <div class="card-header" id="heading6">
+      <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        <button class="mybtn mybtn-link " type="button">
+Which business segment does ESIC intend to grow?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+      <div class="card-body">
+<p>ESIC would like to diversify away from one single business into a multiple sectors.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+        <h4 class="pb-4 pt-4 text-center ">
+OWNERSHIP & COMPANY STRUCTURE
+      </h4>
+
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="heading7">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        <button class="mybtn mybtn-link" type="button" >
+ Why was ESIC formed?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+
+    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+      <div class="card-body">
+      <p>To be one of the leading international investment company by identifying, optimizing and realizing the assets and companies in which it invests.</p>
+
+	  </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading8">
+      <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        <button class="mybtn mybtn-link " type="button">
+Is Baa3 Moody’s rating a standalone or it includes government support notch up?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+      <div class="card-body">
+<p>This is Moody’s Standalone rating for ESIC.  </p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+    <div class="card">
+    <div class="card-header" id="heading9">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+        <button class="mybtn mybtn-link " type="button" >
+Is there an intention to get a rating from S&P and Fitch?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+      <div class="card-body">
+<p>At the moment we do not intend to, however, based on future requirements, we might plan on getting addition rating. </p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+    <div class="card">
+    <div class="card-header" id="heading10">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+        <button class="mybtn mybtn-link " type="button" >
+Is there an intention to do an IPO in the near future?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+      <div class="card-body">
+<p>This could be a natural development for the future. However, it is still too early to start the process.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h4 class="pb-4 pt-4 text-center ">
+FINANCIALS:
+      </h4>
+
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="heading11">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+        <button class="mybtn mybtn-link" type="button" >
+How often will you be publicly publishing your financials?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+
+    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
+      <div class="card-body">
+      <p>The Financials will be published and available on a semi-annual and annual basis. </p>
+
+	  </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading12">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+        <button class="mybtn mybtn-link " type="button" >
+How do you determine ‘fair value’ when making your Investments?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+      <div class="card-body">
+<p>Fair value is determine through the real intrinsic value of the asset at bargain price.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+    <div class="card">
+    <div class="card-header" id="heading13">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+        <button class="mybtn mybtn-link " type="button" >
+Who owns the assets (ESIC or a Subsidiary)?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
+      <div class="card-body">
+<p>All assets are 100% owned by ESIC. </p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+    <div class="card">
+    <div class="card-header" id="heading14">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+        <button class="mybtn mybtn-link " type="button" >
+Do the Subsidiaries upstream all their Dividends to ESIC?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
+      <div class="card-body">
+<p>Yes, all dividends are upstreamed to ESIC.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+    <div class="card">
+    <div class="card-header" id="heading15">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+        <button class="mybtn mybtn-link " type="button" >
+Are there any capex needs at the Subsidiary level that may limit the amount of Dividends that can be up streamed to ESIC?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
+      <div class="card-body">
+<p>ESIC does not have any capex needs for the coming few years, therefore dividend will not distrusted or deviate from current levels and expectations.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+    <div class="card">
+    <div class="card-header" id="heading16">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+        <button class="mybtn mybtn-link " type="button" >
+What is the dividend policy of ESIC to the ultimate Shareholder?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionExample">
+      <div class="card-body">
+<p>Maximum dividend payout is 30% yearly, depending on the net income and the future needs to grow the company at the planned rate.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+    <div class="card">
+    <div class="card-header" id="heading17">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+        <button class="mybtn mybtn-link " type="button" >
+Apart from the Sukuk, does ESIC plan on raising other Debt?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionExample">
+      <div class="card-body">
+<p>ESIC has no plan to issue debt in any form for the foreseeable future.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+      <h4 class="pb-4 pt-4 text-center ">
+OTHERS:
+      </h4>
+
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="heading18">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+        <button class="mybtn mybtn-link" type="button" >
+What is your Risk Management Policy and Investment Process?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+
+    <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionExample">
+      <div class="card-body">
+      <p>Our risk and investment management are based on well-defined level of risk appetite, diversification and investment in high quality stable income generating assets. Our assets allocation takes into consideration long term outlook that factor in medium term cyclical forces.</p>
+
+	  </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading19">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+        <button class="mybtn mybtn-link " type="button" >
+Does ESIC guarantee funding at JV level?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordionExample">
+      <div class="card-body">
+<p>ESIC does not provide or guarantee any funding at JV level.</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+    <div class="card">
+    <div class="card-header" id="heading20">
+      <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+        <button class="mybtn mybtn-link " type="button">
+Will FAB Holdings continue to be the core of the equity portfolio?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordionExample">
+      <div class="card-body">
+<p>FAB shares are one of our long term strategic investment that ESIC intends to keep as part of the core portfolio. </p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+    <div class="card">
+    <div class="card-header" id="heading21">
+      <h2 class="mb-0" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+        <button class="mybtn mybtn-link " type="button" >
+Who is ESIC independent Auditors?
+        </button><i class="fa fa-angle-up rotate-icon"></i>
+      </h2>
+    </div>
+    <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordionExample">
+      <div class="card-body">
+<p>Ernst & Young</p>
+
+
+
+	  </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div><!-- /.blog-main -->
+
+
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="bootjs/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-angle-down").removeClass("fa-angle-up");
+        });
+
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-angle-up").addClass("fa-angle-down");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-up");
+        });
+    });
+</script>
+
+						     </div>
+						     </div>
+
+
+
+						 </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </section>
+            </div>
+            <div class="content-blocks blog blog1">
+                <section class="content">
+
+
+				       <div class="block-content2" id="corporategovernance" style="margin: 0 0 15px;">
+                        <h3 class="block-title">Corporate Governance</h3>
+
+
+                      </div>
+
+
+
+					       <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Principals</h4>
+
+
+
+
+					   <div class="row">
+
+					  <div class="col-md-9 col-lg-9 col-sm-12">
+						  <p>ESIC has adopted a two-tiered governance structure consisting of an Executive Board and Committees. Governance is based on a strict separation of management functions fulfilled by the Executive Board and oversight functions performed by the Committees. ESIC governance relies on rigid, clearly-defined rules and absolute trust between the Executive Board and its Committees.
+</p>
+<p>ESIC’s Corporate Governance Principles and Values are founded on:</p>
+                         				  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">Accountability</li>
+						  <li style="">Responsibility</li>
+						  <li style="">Transparency</li>
+
+						  <li style="">Fairness</li>
+						  <li style="">Trust</li>
+
+						  </ul>
+
+					   </div>
+
+					      <div class="col-md-3 col-lg-3 col-sm-12">
+					     <img src="https://icon-ad.xyz/esic/esic/images/gg.jpg">
+					   </div>
+					   </div>
+
+                    </div>
+
+					       <div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Executive Board of Directors</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>The Executive Board of Directors has an overriding and is mainly responsible for the company's absolute governance and liaison with its committees and shareholders.</p>
+                      <p>The Board will monitor financial performance and external communication and collectively direct the company affairs whilst meeting the expectations of shareholders and stakeholders..</p>
+                      <p>Further to business and financial aspects, the Board recognizes the importance of periodical board meetings for directors to discharge their responsibility to manage the company's strategy and policy and monitor delegated authorities to facilitate individual directors reporting on their particular areas of responsibility.</p>
+
+
+					   </div>
+					   </div>
+
+					<div class="row gridder" style=" ">
+
+
+
+                     		     <div  class="col-lg-4 col-md-4 col-sm-12 blog-content  gridder-list Khalid_Deemas_Al_Suwaidi" style="margin-top:20px;"  data-griddercontent="#Khalid_Deemas_Al_Suwaidi" >
+                       <div class="blog-image">
+
+							  <div class="" style=" padding: 10px; min-height: 115px;">
+							  <h3 class="portfolio-heading">Mr. Khalid Deemas Al Suwaidi</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">ESIC Chief Executive Officer - Vice Chairman of the Executive Board of Directors</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more &gt; </a>
+							  </div>
+                            </div>
+                            </div>
+
+
+						<div class="gridder-content" id="Khalid_Deemas_Al_Suwaidi" >
+						<div class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									 	<h3 class="block-title4">Mr. Khalid Deemas Al Suwaidi</h3>
+										<p class=font-weight-400><b>ESIC Chief Executive Officer - Vice Chairman of the Executive Board of Directors</b></p>
+
+									  <p>ESIC Chief Executive Officer - Vice Chairman of the Executive Board of Directors
+Mr. Khalid Deemas Al Suwaidi was appointed CEO of Das Holding in 2007, having extensive experience as a successful leader and dynamic reformer of business units and corporations.</p>
+								  <p>Throughout his tenure at Das Holding, Mr. Al Suwaidi has been instrumental in delivering business strategy, productivity improvements, operational efficiencies and significant restructuring initiatives. His strong track record in managing large, complex teams and motivating employees to deliver results will ensure Das Holding remains a sustainable and profitable organization.</p>
+								  <p>Mr. Al Suwaidi has over 25 years of extensive banking experience in the Middle East in various banking disciplines. He commenced his career when he first joined the National Bank of Abu Dhabi in 1995 and, in 1998, was recruited by First Gulf Bank to take on the role of Manager of Commercial and Private Banking. He later rejoined the National Bank of Abu Dhabi in 2000 as the Head of the Retail Banking Group.</p>
+								  <p>Furthermore, Mr. Al Suwaidi presently holds several key positions across different organizations and industries, including; Vice Chairman - Abu Dhabi National Takaful, Board Member - Abu Dhabi Commercial Bank & Manazel Real Estate. Moreover, Mr. Al Suwaidi served on the Corporate Governance & Board Audits Compliance Committees of ADCB for five years.</p>
+
+<p>Mr. Al Suwaidi holds a Master of Business Administration degree from Widener University, USA.</p>
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+                        		     <div  class="col-lg-4 col-md-4 col-sm-12 blog-content  gridder-list Matar_Al_Bloushi" style="margin-top:20px;"  data-griddercontent="#Matar_Al_Bloushi" >
+
+						    <div class="blog-image">
+
+
+							  	  <div class="" style=" padding: 10px;min-height: 115px;">
+							  <h3 class="portfolio-heading">Mr. Matar Al Bloushi</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">ESIC Chief Investment Officer - Member of the Executive Board of Directors</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more &gt; </a>
+							  </div>
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+					<div class="gridder-content" id="Matar_Al_Bloushi" >
+						<div class="row">
+						  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									 			<h3 class="block-title4">Mr. Matar Al Bloushi</h3>
+										<p class=font-weight-400>ESIC Chief Investment Officer - Member of the Executive Board of Directors
+Mr. Matar Al Bloushi was appointed CIO of Das Holding in 2007. He is responsible for leading the investment program at Das Holding as well as having overall executive responsibility for the group.</p>
+								  <p>During his almost 13 years at Das Holding, Mr. Al Bloushi has led the sourcing, execution, management, and realization of investment strategies across various industries and geographies. His expertise lies in identifying potential investment opportunities and businesses in a strong market position with growth potential, strong cash flows and significant opportunities to improve operational performance.
+</p>
+								  <p>Mr. Al Bloushi has over 20 years of extensive experience in the UAE's Financial & Funds Management sectors. His career is well distinguished, serving at senior management levels at the National Bank of Abu Dhabi, including Senior Asset Manager, Head of Domestic Capital Markets and Head of Forex & Commodities. Before joining NBAD, he served as the Head of Treasury & Investment Division of First Gulf Bank, Portfolio Manager at Abu Dhabi Investment Company and Dealer at the Treasury Department of the UAE Central Bank.</p>
+
+<p>Additionally, Mr. Al Bloushi presently holds several key positions across different organizations and industries, including; Chairman - Maalem Holding, Board Member - First Energy Bank Bahrain, Etisalat Egypt, Air Arabia & Al Salam Bank.</p>
+<p>Mr. Al Bloushi holds a BA in Banking & Financial Management from the University of Arkansas.</p>
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+                  		     <div  class="col-lg-4 col-md-4 col-sm-12 blog-content  gridder-list Naser_Al_Zaabi" style="margin-top:20px;"  data-griddercontent="#Naser_Al_Zaabi" >
+
+						    <div class="blog-image">
+
+
+							  		  	  <div class="" style="  padding: 10px;min-height: 115px;">
+							  <h3 class="portfolio-heading">Mr. Naser Al Zaabi</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">ESIC Chief Operating Officer - Member of the Executive Board of Directors</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more &gt; </a>
+							  </div>
+                            </div>
+
+
+                        </div>
+
+		   <div class="gridder-content" id="Naser_Al_Zaabi" >
+						<div class="row">		  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									 			<h3 class="block-title4">Mr. Naser Al Zaabi</h3>
+										<p class=font-weight-400><b>ESIC Chief Operating Officer - Member of the Executive Board of Directors</b></p>
+									  <p>Mr. Naser Al Zaabi was appointed COO of Das Holding in 2007. He plays an important leadership role within the group managing across disciplines while having exposure to working with multi-disciplined boards and government entities.</p>
+								  <p>During the past 13 years at Das Holding, he developed strategic and operational planning models and embarked on the continuous improvement of systems and change management within the corporate structure. His leadership and vision are essential as it ensures that the group has the proper operational controls, administrative & reporting procedures and people systems to grow the organization effectively to ensure financial strength and operating efficiency.
+</p>
+								  <p>Mr. Al Zaabi has substantial experience in the UAE banking sector, having worked at the National Bank of Abu Dhabi for over 13 years, and having an illustrious career serving at senior management levels at NBAD, including; Head of Elite Banking and Retail Branch Management.</p>
+
+<p>Additionally; Mr. Al Zaabi presently holds several key positions across different organizations and government sectors, including; Advisor of Minister of Federal Supreme Council Affairs Office - Ministry of Presidential Affairs (MOPA), Chairman - Southern Sun Hotel Abu Dhabi, Chairman - Dusit Thani Hotel Abu Dhabi, Chairman - Tawasul Transport, Chairman - Yas Health, Board Member - Abu Dhabi National Takaful, Manazel Real Estate & Planet Tax-Free.</p>
+<p>Mr. Al Zaabi holds a BA in Science - Marketing & Management from The University of Mount St. Joseph, USA.</p>
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+                        <div  class="col-lg-4 col-md-4 col-sm-12 blog-content  gridder-list Sayed_Shaheryar" style="margin-top:20px;" data-griddercontent="#Sayed_Shaheryar" >
+
+							<div class="blog-image">
+
+							  <div class="" style=" padding: 10px; min-height: 115px;">
+							  <h3 class="portfolio-heading">Mr. Sayed Shaheryar</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">ESIC Chief Financial Officer - Member of the Executive Board of Directors</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more &gt; </a>
+							  </div>
+                            </div>
+
+
+
+                        </div>
+
+	   		<div class="gridder-content" id="Sayed_Shaheryar" >
+						<div class="row">  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									 		<h3 class="block-title4">Mr. Sayed Shaheryar</h3>
+										<p class=font-weight-400><b>ESIC Chief Financial Officer - Member of the Executive Board of Directors</b></p>
+									  <p>Mr. Shaheryar Syed is a Fellow Chartered Accountant from one of the big four international audit firms. He has over 20 years of experience and has been working in UAE since 1999. He has worked with various multinational companies.</p>
+								  <p>Mr. Shaheryar joined Das Holding in December 2007 as Financial Controller. In 2013 he was assigned the strategic position as a Group Chief Financial Officer. In this position, Mr. Shaheryar is responsible for the overall group financial strategy and direction at Das Group. He guides the controller, treasury, shareholder relations, accounting, tax, and other functions of the company to pursue its aggressive growth strategy and meet its clients’ and investors’ expectations.
+</p>
+								  <p>Before joining Das Group, Mr. Shaheryar held the Head of Finance position under Petrofac Group (Listed on the London Stock Exchange). He has also worked in the audit and assurance practice at PWC and Arthur Anderson. Through his nearly 22-year career in accounting, auditing and financial planning, he established a reputation for building work-class teams and aligning financial and business metrics to support business strategy and high growth.</p>
+
+<p>His significant achievement in Das Group include:</p>
+	  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">Finalized successfully various agreements with the joint venture partners;</li>
+						  <li>Managed centralized finance function for the Group and restructuring of group banking facilities;
+</li>
+						  <li>Structuring of the Group-wide Finance Function.</li>
+
+						  </ul>
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div  class="col-lg-4 col-md-4 col-sm-12 blog-content  gridder-list Walid_Jaafar" data-griddercontent="#Walid_Jaafar"   style="margin-top:20px;">
+						    <div class="blog-image">
+
+
+							  	  <div class="" style=" padding: 10px;min-height: 115px;">
+							  <h3  class="portfolio-heading">Mr. Walid Jaafar</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">ESIC Group General Counsel - Member of the Executive Board of Directors</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more &gt; </a>
+							  </div>
+
+                            </div>
+
+                        </div>
+
+					 		<div class="gridder-content" id="Walid_Jaafar" >
+						<div class="row"> 	  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										  <div class="block-content2" style="margin: 0 0 15px;">
+
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+									 		<h3 class="block-title4">Mr. Walid Jaafar</h3>
+									<p class=font-weight-400><b>ESIC Group General Counsel - Member of the Executive Board of Directors</b></p>
+									  <p>Mr. Walid Jaafar was appointed to the position of Group General Counsel at Das Holding in 2011.</p>
+								  <p>Mr. Walid Jaafar was appointed to Group General Counsel at Das Holding in 2011.
+Mr. Jaafar is a qualified lawyer registered with the Beirut Bar Association and has over 30 years of work experience, including 16 years in banking, before joining DAS holding.
+</p>
+								  <p>Over the years, Mr. Jaafar has worked as an in-house General Counsel and in private practices, holding the position of Head of Legal in Barclays Bank UAE and acting as Compliance Officer and MLRO for a DFSA-regulated entity. He has been instrumental in exercising and advising on cross-border transactions, which include joint ventures, mergers & acquisitions and company restructuring across different sectors and industries.</p>
+<p>Additionally, Mr. Jaafar is a Board Member of Burj District Development, a real estate entity.
+</p>
+<p>Mr. Jaafar holds a Bachelor of Science in Business Administration from the Lebanese American University in Beirut, Lebanon and a BA in Law from La Sagesse University in Beirut, Lebanon.</p>
+
+
+
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+					<div  class="col-lg-4 col-md-4 col-sm-12 blog-content  gridder-list Jaafar_Badwan" data-griddercontent="#Jaafar_Badwan"   style="margin-top:20px;">
+						    <div class="blog-image">
+
+
+							  		  	  <div class="" style=" padding: 10px;min-height: 115px;">
+							  <h3 class="portfolio-heading">Dr. Jaafar Badwan</h3>
+							<p style="    font-size: 14px;
+							color: #656565;
+							line-height: 19px;     margin: 5px 0px 5px 0px;">ESIC SVP Strategy & Investment - Member of the Executive Board of Directors</p>
+							<a href="#" id="" style="color: #333333;    font-size: 13px;">Read more &gt; </a>
+							  </div>
+                            </div>
+
+
+                        </div>
+
+
+					<div class="gridder-content" id="Jaafar_Badwan" >
+						<div class="row">	  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+								   <div class="row">
+
+									 <div class="col-md-12 col-lg-12 col-sm-12">
+
+									 	  <div class="block-content2" style="margin: 0 0 15px;">
+									<h3 class="block-title4">Dr. Jaafar Badwan
+</h3>
+									<p class=font-weight-400><b>ESIC SVP Strategy & Investment - Member of the Executive Board of Directors</b></p>
+									  <p>Dr. Badwan is a highly experienced executive banker with over 39 years in the industry. He has a proven track record in driving corporate strategies, fund management and investment banking through strategic decision-making, market analysis and risk management. Dr. Badwan's experience and knowledge make him a valuable asset to any organization.
+</p>
+								  <p>In addition, Dr. Badwan has extensive experience in portfolio management, raising and structuring equity and debt capital for public and private companies in various industries in MENA region.
+</p>
+								  <p>He joined many reputable financial institutions in senior positions, such as Kuwait Investment Co., FAB, and UAE Central Bank. Furthermore, Dr Badwan was a board member at Jordan Dubai Islamic Bank.
+</p>
+								   <p>Dr Badwan is an economist with a proven track record in economic research, focusing mainly on forecasting economic and financial market trends.
+</p>
+								  <p>In late 2007 he published an article in forwarding Magazine forecasting the stock market crash of 2008.
+</p>
+								   </div>
+								   </div>
+								  </div>
+						</div>
+					</div>
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<br />
+			<br />
+
+
+
+
+					<div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Executive Committee</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>The Executive Committee oversees all aspects of the ESIC's strategy, including diversification of investment sectors and asset classes, deployment, fundraising, and market environment analysis. The Executive Committee will also oversee the operational performance of investments, HR development, and our CSR policy.</p>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+					<div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Risk Committee
+</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>The Executive Board of Directors commissions the Risk Committee with an underlying task of assisting the Board in its oversight of maintaining a dynamic approach to risk management; having particular emphasis on:</p>
+
+
+					  	  <ul style="      list-style: disc;  padding-left: 20px;">
+
+						  <li style="">Evaluating & Recommending ESIC's Risk Exposure & Tolerance</li>
+						  <li>Risk Profile</li>
+						  <li>Integrating Risk Policies & Procedures</li>
+						  <li>Risk Governance Structure</li>
+						  <li>Risk Operational Deficiencies</li>
+						  <li>Investment & Financial Risk Limits
+</li>
+								  <li>Effectiveness of ESIC’s Risk Management Framework in Supporting the Group
+
+</li>
+						  </ul>
+						  <p>The Committee's extensive skills and experience contribute to considering how ESIC manages Group risk. Each member shall be entitled to rely on the consistency, accuracy & totality of information provided to the Committee.</p>
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+						<div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Investment Committee
+</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>The Investment Committee is responsible for managing the existing investment portfolio, vetting new investment opportunities and contributing to business and investment planning.</p>
+  <p>The Investment Committee are tasked with the following responsibilities:
+</p>
+
+  	  <ul style="      list-style: disc;  padding-left: 20px;">
+						  <li style="">Investment team oversight
+</li>
+						  <li style="">Establish guiding principles for investment activities
+</li>
+						  <li style="">Endorse investment strategy
+</li>
+						  <li style="">Endorse new investment opportunities
+</li>
+						  <li style="">Monitor & manage investment portfolio
+</li>
+						  <li style="">Endorse divestiture strategies of existing investments
+</li>
+						  <li style="">Endorse financing instruments
+</li>
+						  <li style="">Measure and prepare portfolio reviews, divestiture reviews and forthcoming
+investment strategies for the purpose of delivering reports and budgets</li>
+
+						  </ul>
+
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+					<div class="block-content2" style="margin: 0 0 15px;">
+                        <h4 class="block-title2">Audit
+& Compliance Committee</h4>
+
+					   <div class="row">
+
+					     <div class="col-md-12 col-lg-12 col-sm-12">
+						  <p>ESIC's audit & compliance committee is an essential pillar of effective corporate governance and is the sound body to offer effective oversight of the company's performance, independence and objectivity.
+</p>
+						  <p>The audit committee is responsible for ESIC's financial reporting processes, internal controls, financial statements and auditor quality audits, and ESIC's compliance with legal & regulatory requirements. The audit committee is independent of safeguarding investors.</p>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+
+
+
+				       <div class="block-content2" id="csrstrategy" style="margin: 0 0 15px;">
+                        <h3 class="block-title">CSR STRATEGY</h3>
+
+					   <div class="row">
+					   <div class="col-md-3 col-lg-3 col-sm-12">
+					     <img src="https://icon-ad.xyz/esic/esic/images/csr.jpg">
+					   </div>
+					     <div class="col-md-9 col-lg-9 col-sm-12">
+						  <p>ESIC has a genuine view of its corporate responsibilities (“CSR”) by committing to advance the policies and systems across the Group, addressing all aspects of CSR that are relevant to the business.</p>			  <p>These include ethical conduct, employee wellbeing, health and safety, sustainability of the environment and community involvement. We appreciate that our social, environmental and ethical conduct impacts our reputation, which is why ESIC is committed to continual improvement.</p>	  <p>As part of our active investment approach, we regularly engage with the senior management of our portfolio companies to ensure they have a deep understanding of our core values of CSR. </p>  <p>The Board is ultimately accountable for CSR and is committed to implementing and enhancing appropriate policies while remaining steadfast to a fundamental commitment to sustaining long-term value for shareholders and all stakeholders.</p>
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+
+                    <section id="#esgstrategy">
+
+                      <div class="block-content3" id="#esgstrategy1" style="margin: 0 0 15px;">
+                        <h3 class="block-title">ESG Strategy</h3>
+
+					   <div class="row">
+					   <div class="col-md-3 col-lg-3 col-sm-12">
+					     <img src="https://icon-ad.xyz/esic/wp-content/uploads/2022/09/esg.jpg">
+					   </div>
+					     <div class="col-md-9 col-lg-9 col-sm-12">
+						  <p>ESIC will continue to strengthen its financial position through implementing consistent investments within the framework and criteria of ESG, thus generating competitive returns for its stakeholders.</p>
+						  <p>ESIC approach towards its investment portfolio, its suppliers, employees, local communities, the environment, and society is an essential part of its success.</p>
+						  <p>We believe that responsible investment and business success go hand in hand, as such, ESIC has embedded consideration of ESG factors throughout all stages of its different investment activities and asset classes both real and financial. We are fundamentally committed to build long-term, sustainable businesses, which will grow, provide employment, and generate economic benefits in an environmentally and socially responsible manner.</p>
+						  <p>ESIC reliable investment is based on strong analysis, wise judgement of highly experienced staff, and excellent risk mitigation. ESIC will continue to invest in iconic high-quality asset classes to establish well diversified investment portfolio with reliable approach towards the environment, society, and corporate governance.</p>
+						  <p>
+						      Before acquiring a business, ESIC investment team identifies ESG- related key risks or opportunities. ESIC ESG considerations may be company-specific or common to the industry/subsector or geography as a whole and include political and regulatory developments.
+						  </p>
+						  <p>
+						      The considerations are researched through a variety of sources, including regulatory/compliance filings, investor disclosures and/or media reports. Within UAE law we also assess anti-bribery and corruption risk and seeks assurance that the company is fully compliant with the ESG laws and regulations in the relevant jurisdictions. This initial ESG assessment is an integral part of ESIC due diligence and overall risk and value creation assessment of the business.
+						  </p>
+
+
+
+					   </div>
+					   </div>
+
+                    </div>
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </section>
+            </div>
+            <div class="content-blocks contact">
+                <section class="content">
+                    <div class="block-content">
+                        <h3 class="block-title">Contact us</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form id="contactform"  class="contact-form shake">
+                                    <div class="form-group">
+									<label>Name</label>
+                                        <input id="cname" type="text" class="form-control" name="cname" autocomplete="off" required >
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+										<label>Email</label>
+                                        <input id="cemail" type="email" class="form-control" name="cemail" autocomplete="off" >
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+
+                                    <div class="form-group">
+										<label>Message</label>
+                                        <textarea id="cmessage" class="form-control textarea" rows="10" name="Message" ></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="contactsubmit" type="submit" class="btn selected">Send Message</button>
+
+                                    </div>
+                                </form>
+
+								<div id="cmsg"></div>
+                            </div>
+
+                            <div class="col-md-5 offset-md-1">
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-location-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Address</h5>
+                                        <p>Dusit Thani Complex – Office Building
+Sultan Bin Zayed The First Street
+P.O. Box: 161, Abu Dhabi - UAE</p>
+                                    </div>
+                                </div>
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-telephone-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Call Us</h5>
+                                        <p> <a href="tel:+971 2 444 1443">+971 2 444 1443</a></p>
+                                    </div>
+                                </div>
+
+                                    <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-clock-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Office Hours</h5>
+                                        <p>Monday to Thursday <br />08:00 AM – 04:00 PM<br>Friday <br />08:00 AM – 12:00 PM
+                                    </div>
+                                </div>
+
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-email-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Email</h5>
+                                        <p><a href="mailto:contact@esic.ae">contact@esic.ae</a></p>
+                                    </div>
+                                </div>
+
+								     <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-world-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Website</h5>
+                                        <p><a href="https://icon-ad.xyz/esic/esic-login">esic.ae</a></p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <!--Google Map-->
+                                <div id="map"></div>
+                                <!--Google Map End-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content-blocks pop">
+                <div id="close-pop" class="close-pop">Close <i class="ion-ios-close-empty"></i></div>
+                <section class="content"></section>
+            </div>
+        </div>
+    </section>
+
+<div id="boxes">
+<div style="top: 5%; left: -10px; display: none;" id="dialog" class="window">
+<div id="san">
+<a href="#" class="close2"><img src="https://icon-ad.xyz/esic/esic/images/close-icon.png" width="25" style="float:right; margin-right: -25px; margin-top: -20px;"></a>
+<img src="https://icon-ad.xyz/esic/esic/images/popup.jpg" style="width:100%; height:auto;">
+</div>
+</div>
+<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+</div>
+
+
+
+		 <script src="https://icon-ad.xyz/esic/esic/js/plugins.min.js"></script>
+		 <script src="https://icon-ad.xyz/esic/esic/js/jquery.vide.js"></script>
+  <script src="https://icon-ad.xyz/esic/esic/images/swc.js"></script>
+    <script src="https://icon-ad.xyz/esic/esic/js/main2.js"></script>
+    <script>
+      $(function () {
+        //- $('[data-toggle="tooltip"]').tooltip()
+        $('.gridder').gridderExpander({
+              scroll: true,
+              scrollOffset: 30,
+              scrollTo: "panel",
+              animationSpeed: 400,
+              animationEasing: "easeInOutExpo",
+              showNav: true,
+              nextText: "",
+              prevText: "",
+              closeText: ""
+          });
+      })
+    </script>
+</body>
+</html>

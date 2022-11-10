@@ -12,6 +12,7 @@ export default defineConfig({
         blog: resolve(__dirname, 'blog.html'),
         login: resolve(__dirname, 'login.html'),
         demo: resolve(__dirname, 'demo.html'),
+        contact: resolve(__dirname, 'contact.html'),
       }
     }
   }
