@@ -158,11 +158,11 @@ button.accordion-button.active:after {
 }
 
 .moving-button.is-one {
-  @apply left-0;
+  @apply left-0 rtl:left-auto rtl:right-0;
 }
 
 .moving-button.is-two {
-  @apply right-0;
+  @apply right-0  rtl:right-auto rtl:left-0;
 }
 
 .moving-button-text {
