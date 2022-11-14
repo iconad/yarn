@@ -5,20 +5,13 @@ import './js/global.js'
 import '@splidejs/splide/css';
 
 
-// import Splide from '@splidejs/splide';
+import Splide from '@splidejs/splide';
 
-// new Splide( '.splide', {
-//     type: 'loop',
-//     perPage: 2,
-//     gap: 30,
-//     drag: 'free',
-//     breakpoints: {
-// 		840: {
-//             perPage: 1,
-//             gap: 15,
-//         },
-//     }
-//   }).mount();
+new Splide( '.splide', {
+    perPage: 1,
+    gap: 30,
+    pagination: false,
+  }).mount();
 
 
 
