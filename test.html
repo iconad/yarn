@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/xO9ys9se8YW3jWtD/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<form id="myForm">
+		<label>Full Name</label>
+		<input name="Full Name" />
+		<br/>
+		<label>Mobile Number</label>
+		<input name="Mobile Number" />
+		<br/>
+		<label>Email Address</label>
+		<input name="Email Address" />
+		<br/>
+		<label>Store Type</label>
+		<input name="Store Type" />
+		<br/>
+	</form>
+	<button onclick='SubForm()'>Submit</button>
+</body>
+</html>

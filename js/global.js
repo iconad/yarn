@@ -1,15 +1,11 @@
 
 //this is the button
 const videoPupupOverlay = document.getElementById("videoPupupOverlay");
-const reviewPupupOverlay = document.getElementById("reviewPupupOverlay");
 const videoPupup = document.getElementById("videoPupup");
-const reviewPupup = document.getElementById("reviewPupup");
 const closeVideoPopup = document.getElementById("closeVideoPopup");
-const closeReviewPopup = document.getElementById("closeReviewPopup");
 const accArrowUp = document.querySelector(".acc-arrow-up");
 const accArrowDown = document.querySelector(".acc-arrow-down");
 const watchthedemo = document.querySelectorAll(".watchthedemo");
-const watchtherevew = document.querySelectorAll(".watchtherevew");
 
 
 
@@ -113,21 +109,6 @@ watchthedemo.forEach(demo => {
     });
   });
 
-
-watchtherevew.forEach(demo => {
-    demo.addEventListener('click', function handleClick(event) {
-
-        reviewPupupOverlay.classList.remove('video-popup-overlay')
-        reviewPupupOverlay.classList.add('video-popup-overlay-active')
-
-        reviewPupup.classList.remove('video-popup')
-        reviewPupup.classList.add('video-popup-active')
-
-    });
-  });
-
-
-
 if(closeVideoPopup) {
     closeVideoPopup.addEventListener('click', function () {
 
@@ -136,16 +117,6 @@ if(closeVideoPopup) {
 
         videoPupupOverlay.classList.remove('video-popup-overlay-active')
         videoPupupOverlay.classList.add('video-popup-overlay')
-    })
-}
-
-if(closeReviewPopup) {
-    closeReviewPopup.addEventListener('click', function () {
-        reviewPupup.classList.remove('video-popup-active')
-        reviewPupup.classList.add('video-popup')
-
-        reviewPupupOverlay.classList.remove('video-popup-overlay-active')
-        reviewPupupOverlay.classList.add('video-popup-overlay')
     })
 }
 

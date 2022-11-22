@@ -5,10 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yarn</title>
-    <script type="module" crossorigin src="/assets/about.61e3f095.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/global.b1f4bd48.js">
+    <script type="module" crossorigin src="/assets/about.b30c09b1.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/global.b1974140.js">
     <link rel="modulepreload" crossorigin href="/assets/splide.esm.5363e842.js">
-    <link rel="stylesheet" href="/assets/global.09cfd9e9.css">
+    <link rel="stylesheet" href="/assets/global.5a6dc643.css">
     <link rel="stylesheet" href="/assets/splide.6c527891.css">
   </head>
   <body class="overflow-x-hidden">
@@ -480,7 +480,7 @@
                       </div>
                     </li>
 
-                    <li class="splide__slide relative overflow-hidden rounded-3xl cursor-pointer watchtherevew">
+                    <li class="splide__slide relative overflow-hidden rounded-3xl cursor-pointer watchtherevew" data-iframe="https://www.youtube.com/embed/NfNOXyPVjxk">
                       <img src="/images/videoreview.png" alt="image" class="h-full w-full object-cover">
                       <div class="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end">
                         <div class="bg-gradient-to-t from-black to-transplarent w-full p-10 flex items-center space-x-3">
@@ -521,7 +521,7 @@
         <!-- review Popup start -->
         <div id="reviewPupupOverlay" class="fixed inset-0 bg-theme-black bg-opacity-75 flex items-center justify-center transition-all duration video-popup-overlay">
 
-          <div id="reviewPupup" class="bg-gray-100 w-auto md:w-5/6 md:w-3/4 lg:w-1/2 h-auto md:h-[20rem] lg:h-[25rem] xl:h-[30rem] 2xl:h-[45rem] rounded-xl video-popup transition-all duration-300 relative shadow-2xl shadow h-[30rem]">
+          <div id="reviewPupup" class="bg-gray-100 w-auto md:w-5/6 md:w-3/4 lg:w-1/2 h-auto md:h-[20rem] lg:h-[25rem] xl:h-[30rem] 2xl:h-[35rem] rounded-xl video-popup transition-all duration-300 relative shadow-2xl shadow h-[30rem]">
 
             <div id="closeReviewPopup" class="absolute -right-5 md:-right-10 -top-5 md:-top-10 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-100 w-6 lg:w-10 h-6 lg:h-10 hover:rotate-90 transition-all duration-[0.4s]">
@@ -530,7 +530,7 @@
             </div>
             <!-- close button -->
 
-              <iframe class="abosolute inset-0 h-full rounded-xl overflow-hidden" width="100%" height="100%"  src="https://www.youtube.com/embed/WzXffGepz0s?controls=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id="reviewPupupIframe" class="abosolute inset-0 h-full rounded-xl overflow-hidden" width="100%" height="100%"  src="https://www.youtube.com/embed/WzXffGepz0s?controls=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <!-- youtube video -->
 
 
