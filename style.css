@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,body {
   font-family: 'Visby CF';
+}
+html,body.rtl {
+  font-family: 'Cairo', sans-serif!important;
 }
 
 .primary-container {

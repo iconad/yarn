@@ -29,6 +29,7 @@ module.exports = {
         'se': '380px',
       },
       fontFamily: {
+        'cairo': 'Cairo',
         'visby-normal': 'Visby CF',
         'visby-bold': 'Visby CF Extra',
         'visby-semibold': 'Visby CF Demi',
