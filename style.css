@@ -18,41 +18,50 @@ html,body.rtl {
 }
 
 .primary-button {
-  @apply focus:outline-none focus:bg-theme-red focus:border-theme-red hover:focus:text-white cursor-pointer bg-primary text-white px-4 py-2 font-semibold rounded-xl border-primary border-2 hover:bg-transparent hover:text-primary transition-all;
+  @apply focus:outline-none focus:bg-theme-red focus:border-theme-red hover:focus:text-white cursor-pointer bg-primary text-white px-4 py-2 font-medium tracking-wide rounded-lg border-primary border-2 hover:bg-transparent hover:text-primary transition-all;
+}
+.warning-button {
+  @apply focus:outline-none focus:bg-theme-orange focus:border-theme-orange hover:focus:text-white cursor-pointer bg-theme-orange text-white px-4 py-2 font-medium tracking-wide rounded-lg border-theme-orange border-2 hover:bg-transparent hover:text-theme-orange transition-all;
+}
+.warning-button-on-hover-white {
+  @apply focus:outline-none focus:bg-transparent focus:border-white hover:focus:text-white cursor-pointer bg-theme-orange text-white px-4 py-2 font-medium tracking-wide rounded-lg border-theme-orange border-2 hover:border-gray-200 hover:bg-transparent hover:text-white transition-all;
+}
+.primary-button-on-hover-white {
+  @apply focus:outline-none focus:bg-transparent focus:border-gray-200 hover:focus:text-white cursor-pointer bg-primary text-white px-4 py-2 font-medium tracking-wide rounded-lg border-primary border-2 hover:border-gray-200 hover:bg-transparent hover:text-white transition-all;
 }
 
 .primary-button-invert {
-  @apply cursor-pointer bg-transparent text-primary px-4 py-2 font-semibold rounded-xl border-primary border-2 hover:bg-primary hover:text-white transition-all;
+  @apply cursor-pointer bg-transparent text-primary px-4 py-2 font-medium tracking-wide rounded-lg border-primary border-2 hover:bg-primary hover:text-white transition-all;
 }
 
 .secondary-button {
-  @apply cursor-pointer bg-gray-800 text-white px-4 py-2 font-semibold rounded-xl border-gray-800 border-2 hover:bg-transparent hover:text-gray-800 transition-all;
+  @apply cursor-pointer bg-gray-800 text-white px-4 py-2 font-medium tracking-wide rounded-lg border-gray-800 border-2 hover:bg-transparent hover:text-gray-800 transition-all;
 }
 
 .secondary-button-invert {
-  @apply cursor-pointer bg-transparent text-gray-800 px-4 py-2 font-semibold rounded-xl border-gray-800 border-2 hover:bg-gray-800 hover:text-white transition-all;
+  @apply cursor-pointer bg-transparent text-gray-800 px-4 py-2 font-medium tracking-wide rounded-lg border-gray-800 border-2 hover:bg-gray-800 hover:text-white transition-all;
 }
 
 .default-button {
-  @apply cursor-pointer bg-gray-100 text-primary px-4 py-2 font-semibold rounded-xl border-gray-100 border-2 hover:bg-transparent hover:text-white transition-all;
+  @apply cursor-pointer bg-gray-100 text-primary px-4 py-2 font-medium tracking-wide rounded-lg border-gray-100 border-2 hover:bg-transparent hover:text-white transition-all;
 }
 
 .default-button-invert {
-  @apply cursor-pointer bg-transparent text-gray-100 px-4 py-2 font-semibold rounded-xl border-gray-100 border-2 hover:bg-gray-100 hover:text-primary transition-all;
+  @apply cursor-pointer bg-transparent text-gray-100 px-4 py-2 font-medium tracking-wide rounded-lg border-gray-100 border-2 hover:bg-gray-100 hover:text-primary transition-all;
 }
 
 
 
 .heading-1 {
-  @apply text-2xl md:text-4xl font-visby-bold;
+  @apply text-2xl md:text-4xl font-visby-bold rtl:font-cairo;
 }
 
 .heading-2 {
-  @apply text-2xl md:text-3xl font-visby-bold;
+  @apply text-2xl md:text-3xl font-visby-bold rtl:font-cairo;
 }
 
 .heading-3 {
-  @apply text-xl md:text-2xl font-visby-bold;
+  @apply text-xl md:text-2xl font-visby-bold rtl:font-cairo;
 }
 
 
@@ -98,16 +107,44 @@ button.accordion-button.active:after {
 }
 
 .splide__pagination__page {
-  margin: 4px!important;
+  /* margin: 4px!important; */
 }
 
 .splide__pagination__page svg {
-  fill:#727272!important;
+  /* fill:#727272!important; */
 }
 
 .splide__pagination__page.is-active {
-  background: gray!important;
+  /* background: gray!important;
   width: 30px;
+  border-radius: 15px;
+  transform: scale(1)!important; */
+}
+
+.splide__pagination.homesplide {
+  right: auto;
+  bottom: 10%;
+}
+
+@media only screen and (min-width: 1800px) {
+  .splide__pagination.homesplide {
+    bottom: 30%;
+  }
+}
+
+
+.splide__pagination.homesplide .splide__pagination__page {
+  background: #BC1F5F;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  transform: scale(1)!important;
+  border: 2px solid #BC1F5F;
+  opacity: 1;
+}
+
+.splide__pagination.homesplide .splide__pagination__page.is-active {
+  background: transparent;
   border-radius: 15px;
   transform: scale(1)!important;
 }
@@ -125,17 +162,39 @@ button.accordion-button.active:after {
 }
 
 
-.navbar-dropdown {
+.lang-navbar-dropdown {
   @apply relative;
 }
 
-.navbar-dropdown > ul {
+.lang-navbar-dropdown > ul {
   @apply opacity-0 transition-all scale-[0];
 }
 
-.navbar-dropdown:hover > ul {
+.lang-navbar-dropdown:hover > ul {
   @apply opacity-100 scale-100;
 }
+
+.navbar-dropdown > ul {
+  @apply h-[0px] hidden;
+}
+
+.navbar-dropdown:hover > ul {
+  @apply h-auto block;
+}
+
+
+.navbar-link {
+  @apply py-2 px-5 block font-medium uppercase tracking-wide hover:bg-gray-200;
+}
+
+.navbar-link.inside-dropdown {
+  @apply py-1 px-7 text-sm;
+}
+
+.navbar-dropdown-link {
+  @apply flex items-center space-x-2 cursor-pointer;
+}
+
 
 .video-popup-overlay {
   @apply -z-[10] opacity-0;

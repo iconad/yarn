@@ -7,6 +7,26 @@ const accArrowUp = document.querySelector(".acc-arrow-up");
 const accArrowDown = document.querySelector(".acc-arrow-down");
 const watchthedemo = document.querySelectorAll(".watchthedemo");
 
+import offset from 'document-offset';
+
+import '@splidejs/splide/css';
+import Splide, { FADE } from '@splidejs/splide';
+
+new Splide( '.homesplide', {
+    type: 'fade',
+    perPage: 1,
+    arrows: false,
+    gap: 0,
+    classes: {
+		pagination: 'splide__pagination homesplide',
+  },
+}).mount();
+
+
+const HomeSplideList = document.getElementById('HomeSplideList');
+const HomeSplidePagination = document.querySelector('.splide__pagination.homesplide');
+const offsetResult = offset(HomeSplideList)
+HomeSplidePagination.style.left = offsetResult.left - 10 +'px';
 
 
 var acc = document.getElementsByClassName("accordion-button");
@@ -86,14 +106,12 @@ navbarBurger.addEventListener('click', function () {
     let check = navbarBurger.classList.contains('active')
     if(check) {
         mainNavbar.classList.remove('hidden')
-        mainNavbar.classList.add('flex')
     }
 })
 
 closeNavbar.addEventListener('click', function () {
     navbarBurger.classList.remove('active')
     mainNavbar.classList.add('hidden')
-    mainNavbar.classList.remove('flex')
 })
 
 
