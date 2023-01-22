@@ -22,6 +22,7 @@ module.exports = {
         'theme-yellow': '#ED9E2F',
         'theme-black': '#1A1A1A',
         'theme-gray': '#F2F2F2',
+        'theme-gray-1': '#6060600f',
         'theme-dark-gray': '#CCCCCC',
       },
       screens: {

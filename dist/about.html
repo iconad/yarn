@@ -5,14 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yarn</title>
-    <script type="module" crossorigin src="/assets/about.b30c09b1.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/global.b1974140.js">
-    <link rel="modulepreload" crossorigin href="/assets/splide.esm.5363e842.js">
-    <link rel="stylesheet" href="/assets/global.06664a33.css">
-    <link rel="stylesheet" href="/assets/splide.6c527891.css">
+    <script type="module" crossorigin src="/assets/about.4c3828a9.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/global.c4277691.js">
+    <link rel="stylesheet" href="/assets/global.621a98a1.css">
   </head>
   <body class="overflow-x-hidden">
-    <div id="app" class="site-wrapper py-10">
+    <div id="app" class="site-wrapper">
 
         <!-- Popup start -->
         <div id="videoPupupOverlay" class="fixed inset-0 bg-theme-black bg-opacity-75 flex items-center justify-center transition-all duration video-popup-overlay">
@@ -37,149 +35,171 @@
         <!-- Popup end -->
 
 
-        <div class="primary-container">
+        <div id="navigation" class="navbar-wrapper fixed left-0 top-0 py-5 sm:py-3 w-full z-50">
 
-            <div class="navbar-wrapper flex items-center justify-between bg-gray-100 p-10 rounded-t-xl">
+          <div class="primary-container flex items-center justify-between w-full">
 
-                <a href="/" class="block nav-logo">
-                    <img src="/images/logo.png" alt="logo" class="w-24">
-                </a>
-                <!-- nav-logo -->
+            <div class="nav-logo">
+              <img src="/images/logo-white.png" id="whiteLogo" alt="logo" class="w-[7rem] md:w-40">
+              <img src="/images/logo.png" alt="logo" id="blackLogo" class="hidden w-[7rem] md:w-40">
+            </div>
+            <!-- nav-logo -->
 
-                <nav id="mainNavbar" class="main-navbar hidden bg-gray-100 lg:flex w-full lg:w-auto absolute lg:static inset-0 z-10 items-center justify-center">
+            <nav class="relative">
 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute right-10 cursor-pointer top-10 w-10 h-10 block lg:hidden" id="closeNavbar">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+              <ul class="navbar flex items-center space-x-4 rtl:space-x-reverse text-xl lg:text-base font-medium">
+                <li class="order-2 md:order-1">
+                  <div id="navbarBurger" class="cursor-pointer navbar-burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="whitenav text-white w-8 md:w-10 h-8 md:h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                  </div>
+                </li>
+                <li class="order-1 md:order-2 -mt-1">
+                  <a href="login.html" class="primary-button-on-hover-white uppercase text-sm md:text-base mr-4 md:mr-0"> Request a demo </a>
+                </li>
+                <li class="lang-navbar-dropdown hidden md:block order-3">
+                  <a href="#" class="hover:text-primary flex items-center space-x-[2px] rtl:space-x-reverse text-white whitenav">
+                    <span>EN</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </a>
 
+                  <ul class="absolute right-0 top-[102%] bg-gray-200 rounded-lg w-26 overflow-hidden">
+                    <li> <a href="#" class="px-3 py-1 text-xl block hover:bg-gray-300"> العربية </a> </li>
+                  </ul>
+                </li>
 
-                <ul class="navbar flex flex-col lg:flex-row items-center space-y-5 lg:space-y-0 lg:space-x-5 2xl:space-x-8 rtl:space-x-reverse text-xl lg:text-base font-medium">
-                  <li> <a href="about.html" class="hover:text-primary font-semibold"> About Us </a> </li>
-                  <li class="navbar-dropdown">
-                    <a href="products.html" class="hover:text-primary flex items-center space-x-[2px] rtl:space-x-reverse">
-                      <span>Products</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </a>
+              </ul>
+              <!-- navbar -->
 
-                    <ul class="absolute left-0 top-[102%] shadow border bg-gray-100 rounded-2xl w-auto overflow-hidden">
-                      <li> <a href="products.html#CRM" class="px-5 py-3 block hover:bg-gray-200 whitespace-nowrap"> CRM </a> </li>
-                      <li> <a href="products.html#MaintenanceManagement" class="px-5 py-3 block hover:bg-gray-200 whitespace-nowrap"> Maintenance Management </a> </li>
-                      <li> <a href="products.html#securityAndAccess" class="px-5 py-3 block hover:bg-gray-200 whitespace-nowrap"> Security & Access </a> </li>
-                    </ul>
+              <!-- navbar dropdown start -->
+              <div id="mainNavbar" class="main-navbar absolute top-0 right-0  w-[280px] sm:w-[400px] md:w-full bg-gray-100 rounded-2xl py-5 hidden">
 
-                  </li>
-                  <li> <a href="pricing.html" class="hover:text-primary"> Pricing </a> </li>
-                  <li> <a href="demo.html" class="hover:text-primary"> Request a demo </a> </li>
-                  <li> <a href="blog.html" class="hover:text-primary"> Blog </a> </li>
-                  <li class="navbar-dropdown">
-                    <a href="#" class="hover:text-primary flex items-center space-x-[2px]">
-                      <span>English</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </a>
-
-                    <ul class="absolute left-0 top-[102%] bg-gray-200 rounded-2xl w-26 overflow-hidden">
-                      <li> <a href="#" class="px-5 py-5 block hover:bg-gray-300"> العربية </a> </li>
-                    </ul>
-
-                  </li>
-                  <li class="pt-2 lg:pt-0">
-                    <a href="login.html" class="primary-button"> Login </a>
-                  </li>
-                </ul>
-                <!-- navbar -->
-                </nav>
-                <!-- main navbar -->
-
-                <div id="navbarBurger" class="cursor-pointer navbar-burger block lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+                <div id="closeNavbar" class="cursor-pointer close-burger absolute right-5 top-5 z-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-400 hover:text-gray-600 w-8 md:w-10 h-8 md:h-10">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
                 </div>
 
-            </div>
-            <!-- navbar wrapper -->
-
-        </div>
-        <!-- container -->
-
-      <section class="cover-section primary-container">
-
-        <div class="inner-container bg-gray-100 rounded-b-xl p-10">
-
-        <div class="cover-content py-12 md:py-24 lg:py-32 flex items-center">
-
-          <div class="flex items-center w-full">
-
-            <div class="w-full space-y-10 text-center">
-              <div class="space-y-5">
-                <h1 class="text-3xl lg:text-4xl font-visby-bold">
-                  <span class="block">Yarn Cloud Technologies</span>
-                  <small class="text-lg md:text-2xl lg:text-3xl block text-slate-500">formally Manzel Express</small>
-                </h1>
-                <p>
-                  <span class="span-block">Is an all-in-one solution for all your property</span>
-                  <span class="span-block">management and business needs</span>
-                </p>
-
-                <a href="#nextSec" class="flex justify-center cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                <ul>
+                  <li> <a href="#" class="navbar-link"> Home </a> </li>
+                  <li> <a href="#" class="navbar-link"> About Us </a> </li>
+                  <li class="navbar-dropdown">
+                    <span class="navbar-link navbar-dropdown-link">
+                      <span>Features</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                </a>
+                      </svg>
+                    </span>
+
+                    <ul class="">
+                      <li> <a href="" class="navbar-link inside-dropdown"> CRM </a> </li>
+                      <li> <a href="" class="navbar-link inside-dropdown"> Maintenance Management </a> </li>
+                      <li> <a href="" class="navbar-link inside-dropdown"> Security & Access </a> </li>
+                    </ul>
+
+                  </li>
+                  <li> <a href="#" class="navbar-link"> Pricing </a> </li>
+                  <li> <a href="#" class="navbar-link"> Blog </a> </li>
+                </ul>
+                <div class="p-5 space-y-6">
+                  <a href="login.html" class="primary-button uppercase text-sm md:text-base mr-4 md:mr-0"> Request a demo </a>
+                  <p class="font-medium">Let's talk about your goals! <a href="mailto:info@Yarn.com.sa" class="hover:underline">Info@Yarn.com.sa</a></p>
+
+                  <ul class="flex items-center justify-center lg:justify-start rtl:lg:justify-end space-x-2 text-gray-100">
+                    <li class="p-2 bg-gray-700 flex items-center justify-center rounded-full">
+                      <a href="https://www.facebook.com/MyBuffaloDrink">
+                        <svg class="fill-current w-4 h-4 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                      </a>
+                    </li>
+
+                    <li class="p-2 bg-gray-700 flex items-center justify-center rounded-full">
+                      <a href="https://www.instagram.com/mybuffalodrink">
+                        <svg class="fill-current w-4 h-4 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 0 0 1.384 2.126A5.868 5.868 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 0 0 2.126-1.384 5.86 5.86 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 0 0-1.384-2.126A5.847 5.847 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 0 1-.899 1.382 3.744 3.744 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 0 1-1.379-.899 3.644 3.644 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+                      </a>
+                    </li>
+
+                    <li class="p-2 bg-gray-700 flex items-center justify-center rounded-full">
+                      <a href="https://twitter.com/mybuffalodrink">
+                        <svg class="fill-current w-4 h-4 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
+                      </a>
+                    </li>
+
+                    <li class="p-2 bg-gray-700 flex items-center justify-center rounded-full">
+                      <a href="https://www.youtube.com/channel/UCqMxVHFpZGNmIU37sRGOycA">
+                        <svg class="fill-current w-4 h-4 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      </a>
+                    </li>
+
+                    <li class="p-2 bg-gray-700 flex items-center justify-center rounded-full">
+                      <a href="https://www.snapchat.com/add/mybuffalodrink">
+                        <svg class="fill-current w-4 h-4 transition hover:scale-125" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301a.996.996 0 0 1 .464-.104c.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509a.606.606 0 0 1-.045.225c-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03a3.19 3.19 0 0 1-.538-.074 6.034 6.034 0 0 0-1.273-.135c-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884a6.623 6.623 0 0 0-.928-.074c-.54 0-.958.089-1.272.149a2.879 2.879 0 0 1-.54.074c-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226a.6.6 0 0 1-.055-.225.496.496 0 0 1 .42-.509c3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809a2.233 2.233 0 0 1-.346-.119c-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+
               </div>
-            </div>
-            <!-- left side -->
+              <!-- navbar dropdown end -->
 
+            </nav>
+            <!-- main navbar -->
           </div>
-          <!-- flex -->
+
         </div>
-        <!-- cover content -->
-        </div>
-        <!-- inner container -->
-      </section>
-      <!-- cover section -->
+        <!-- navbar wrapper -->
 
+        <section class="cover-section h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/about/cover.png);">
+          <div class="absolute inset-0 bg-black bg-opacity-75"></div>
+          <div class="primary-container flex items-center justify-center h-full relative z-10">
+            <div class="h-[100vh] md:h-[90vh] w-full flex flex-col justify-center items-center text-center">
 
-      <section class="my-16 md:my-48 2xl:my-64" id="nextSec">
+              <div class="text-white space-y-5 mt-16">
+                <h1 class="text-4xl sm:text-5xl font-bold">
+                  <span class="block">Yarn Cloud Technologies </span>
+                  <span class="block">formally known as Manzel Express </span>
+                </h1>
+                <p class="text-lg sm:text-xl">Take control of your Residential & Commercial Properties Anytime, Anywhere!</p>
+                <div class="flex items-center justify-center space-x-5 pt-12">
 
-        <div class="primary-container">
-          <div class="flex flex-col lg:flex-row items-center space-y-16 lg:space-y-0 lg:space-x-16 rtl:space-x-reverse">
-            <div class="w-full lg:w-2/3 space-y-8 text-center lg:text-left rtl:lg:text-right">
-              <h3 class="text-2xl sm:text-3xl font-visby-bold">
-                <span>An innovative solution,</span>
-                <span class="text-theme-red">
-                    <span class="block">born originally in the</span>
-                    <span class="block">state of Delaware in</span>
-                    <span class="block">the US back in 2014</span>
-                </span>
-              </h3>
-              <p>
-                we offer a suite of services that are designed to meet the unique needs of your organization. With our deep understanding of finance, IT, and software development, we are able to offer a highly extensible solution that is tailored to your specific requirements.
-              </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+
+                </div>
+              </div>
 
             </div>
-            <!-- text -->
-            <div class="w-full">
-              <img src="/images/about/laptop.png" alt="tabs image" class="md:scale-125 ml-10 sm:ml-16">
-            </div>
-            <!-- image -->
           </div>
+          <!-- inner container -->
+        </section>
+        <!-- cover section -->
+
+        <section class="flex items-center h-[40rem] 3xl:h-[60rem] bg-no-repeat bg-left sm:bg-center sm:bg-right bg-cover" style="background-image: url(./images/about/about1.png);">
+
+          <div class="primary-container">
+
+              <div class="space-y-5 px-5 w-full sm:w-1/3">
+                <h3 class="text-2xl sm:text-2xl font-semibold">An innovative solution,
+                  born originally in the state of Delaware in the US back in 2014</h3>
+                <div class="font-medium">
+                  <p>We offer a suite of services that are designed to meet the unique needs of your organization. With our deep understanding of finance, IT, and software development, we are able to offer a highly extensible solution that is tailored to your specific requirements. </p>
+                </div>
+              </div>
+
         </div>
-        <!-- container -->
-
       </section>
-      <!-- an innovation solutions -->
 
-      <section class="leader-in-gcc mt-24 md:mt-48 2xl:mt-64">
+      <section class="leader-in-gcc mt-16 sm:mt-24 2xl:mt-40">
 
         <div class="primary-container">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-center lg:text-left rtl:lg:text-right">
 
-            <div class="card rounded-3xl flex items-center justify-center relative bg-gray-100 p-10">
+            <div class="card flex items-center justify-center relative bg-gray-100 p-10">
 
               <div class="space-y-3 relative z-1">
                 <img src="/images/about/trophy.png" alt="image" class="w-16 mx-auto lg:m-0">
@@ -191,7 +211,7 @@
             <!-- card -->
 
 
-            <div class="card rounded-3xl flex items-center justify-center relative bg-gray-100 p-10">
+            <div class="card flex items-center justify-center relative bg-gray-100 p-10">
 
               <div class="space-y-3 relative z-1">
                 <img src="/images/about/user.png" alt="image" class="w-16 mx-auto lg:m-0">
@@ -210,7 +230,7 @@
       <!-- leaders in GCC -->
 
 
-      <section class="yarn-solutions-redefines mt-32 md:mt-48 2xl:mt-72">
+      <section class="yarn-solutions-redefines mt-16 sm:mt-24 2xl:mt-40">
 
         <div class="primary-container space-y-16">
 
@@ -225,45 +245,45 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
 
-            <div class="overflow-hidden card h-80 rounded-3xl bg-theme-orange flex items-center justify-center relative">
+            <div class="overflow-hidden card h-80 rounded-3xl bg-theme-orange flex justify-center relative pt-16">
 
               <div class="absolute left-0 bottom-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-3/4 2xl:w-1/3">
                 <img src="/images/about/home.png" alt="icon" class="w-full">
               </div>
 
               <div class="space-y-3 text-center text-white relative z-1">
-                <div class="text-3xl font-visby-bold">Residential</div>
-                <p class="w-4/5 mx-auto text-sm">Digitalize Your Residential Developments Management and change your residences experience .</p>
+                <div class="text-3xl sm:text-4xl font-semibold tracking-wide">Residential</div>
+                <p class="w-4/5 mx-auto leading-snug">Digitalize Your Residential Developments Management and change your residences experience .</p>
               </div>
 
             </div>
             <!-- card -->
 
 
-            <div class="overflow-hidden card h-80 rounded-3xl bg-theme-maroon flex items-center justify-center relative">
+            <div class="overflow-hidden card h-80 rounded-3xl bg-theme-maroon flex justify-center relative pt-16">
 
               <div class="absolute left-0 bottom-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-3/4 2xl:w-1/3">
                 <img src="/images/about/file.png" alt="icon" class="w-full">
               </div>
 
               <div class="space-y-3 text-center text-white relative z-1">
-                <div class="text-3xl font-visby-bold">Commercial</div>
-                <p class="w-4/5 mx-auto text-sm">Rent out and manage your spaces, offices, or amenities all in one platform.</p>
+                <div class="text-3xl sm:text-4xl font-semibold tracking-wide">Commercial</div>
+                <p class="w-4/5 mx-auto leading-snug">Rent out and manage your spaces, offices, or amenities all in one platform.</p>
               </div>
 
             </div>
             <!-- card -->
 
 
-            <div class="overflow-hidden card h-80 rounded-3xl bg-theme-purple flex items-center justify-center relative">
+            <div class="overflow-hidden card h-80 rounded-3xl bg-theme-purple flex justify-center relative pt-16">
 
               <div class="absolute left-0 bottom-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-3/4 2xl:w-1/3">
                 <img src="/images/about/bag.png" alt="icon" class="w-full">
               </div>
 
               <div class="space-y-3 text-center text-white relative z-1">
-                <div class="text-3xl font-visby-bold">Retail</div>
-                <p class="w-4/5 mx-auto text-sm">The retail suite helps you tooptimize all aspects of your business, including evaluating current and future occupancy and improving customer experience by gaining better analytical insight</p>
+                <div class="text-3xl sm:text-4xl font-semibold tracking-wide">Retail</div>
+                <p class="w-4/5 mx-auto leading-snug">The retail suite helps you tooptimize all aspects of your business, including evaluating current and future occupancy and improving customer experience by gaining better analytical insight</p>
               </div>
 
             </div>
@@ -280,17 +300,16 @@
 
 
 
-      <section class="our-team py-32 md:mt-48 2xl:mt-72 bg-gray-100">
+      <section class="our-team py-32 mt-16 sm:mt-24 2xl:mt-40 bg-gray-100">
 
         <div class="primary-container space-y-16">
 
           <div class="section-header space-y-5 text-center">
             <h2 class="heading-1">Our Team</h2>
 
-            <p class="">
-              <span class="span block">We're a group of Residential Communities experts and software</span>
-              <span class="span block">engineers passionate about making your job easier!</span>
-              <span class="span block">With more than 16 years of experience</span>
+            <p class="font-medium">
+              <span class="span-block">We are a group of Residential Communities experts and software engineers </span>
+              <span class="span-block">with 16 years of experience, passionate about making your job easier!</span>
             </p>
 
           </div>
@@ -307,8 +326,8 @@
                 </div>
                 <!-- box image -->
                 <div>
-                  <h3 class="font-visby-bold">ENG. YAHIA SHAHEEN</h3>
-                  <p class="font-semibold text-sm text-slate-700">Co-Fonder, CEO</p>
+                  <h3 class="font-semibold tracking-wide">ENG. YAHIA SHAHEEN</h3>
+                  <p class="font-medium tracking-wide text-sm text-theme-gray-light">Co-Fonder, CEO</p>
                 </div>
               </div>
               <!-- box -->
@@ -320,8 +339,8 @@
                 </div>
                 <!-- box image -->
                 <div>
-                  <h3 class="font-visby-bold">REEM FAYEZ</h3>
-                  <p class="font-semibold text-sm text-slate-700">Co-Fonder, CFO</p>
+                  <h3 class="font-semibold tracking-wide">REEM FAYEZ</h3>
+                  <p class="font-medium tracking-wide text-sm text-theme-gray-light">Co-Fonder, CFO</p>
                 </div>
               </div>
               <!-- box -->
@@ -333,8 +352,8 @@
                 </div>
                 <!-- box image -->
                 <div>
-                  <h3 class="font-visby-bold">AHMAD KHARBAT</h3>
-                  <p class="font-semibold text-sm text-slate-700">Co-Fonder, CTO</p>
+                  <h3 class="font-semibold tracking-wide">AHMAD KHARBAT</h3>
+                  <p class="font-medium tracking-wide text-sm text-theme-gray-light">Co-Fonder, CTO</p>
                 </div>
               </div>
               <!-- box -->
@@ -349,11 +368,11 @@
       </section>
       <!-- our team -->
 
-      <section class="yarn-clients-section mt-32 md:mt-48 2xl:mt-64">
+      <section class="yarn-clients-section mt-16 md:mt-24 2xl:mt-40">
 
         <div class="primary-container">
 
-          <div class="heading-1 text-center">
+          <div class="font-semibold text-4xl text-center">
             <div class="span-block">As seen on press</div>
           </div>
 
@@ -406,109 +425,71 @@
       <!-- yarn cients-section -->
 
 
-      <section class="our-team py-32 md:mt-48 2xl:mt-72 bg-gray-100">
+      <section class="our-team py-32 mt-16 sm:mt-24 2xl:mt-40 bg-gray-100">
 
         <div class="primary-container space-y-16">
 
-          <div class="section-header space-y-5 text-center">
-            <h2 class="heading-1">Our Client Feedback</h2>
-
-            <p>How we transformed and digitize our partners</p>
-
+          <div class="section-header text-center">
+            <h2 class="text-4xl font-semibold">Why Our Clients Love Us!</h2>
           </div>
           <!-- section header -->
 
-          <section class="splide relative p-0 md:p-16">
-            <div class="hidden md:block absolute pointer-events-none left-16 h-full w-48 bg-gradient-to-r from-gray-100 to-transplarent z-10"></div>
-            <div class="hidden md:block absolute pointer-events-none right-16 h-full w-48 bg-gradient-to-r from-transparent to-gray-100 z-10"></div>
+          <div class="aboutsplide splide relative">
             <div class="splide__track">
-                  <ul class="splide__list">
+              <div class="splide__list">
 
-                    <li class="splide__slide flex items-center p-10 bg-stone-300 bg-opacity-50 rounded-3xl">
-                      <div class="space-y-5">
-
-                        <div class="flex space-x-5">
-                          <img src="https://demo.manzelexpress.com/hosted/images/2f/79035f9a234838842fd196f9dc49b3/Screen-Shot-2020-05-16-at-7.00.49-PM.png" alt="user profile image" class="w-32 h-32 object-cover object-top rounded-xl">
-
-                          <div class="user-info flex flex-col justify-center space-y-px">
-                            <div class="text-xl font-semibold tracking-wider">Matthew Power</div>
-                            <div class="text-lg">Property Manager</div>
-                            <div class="text-lg">One Percent Realty-USA</div>
-                            <div class="flex items-center space-x-px">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                            </div>
-                          </div>
-                          <!-- user info -->
-                        </div>
-
-                        <div class="text-lg text-gray-900">
-                          <p>For the first time , i 've been able to use Manzel Express to fully account for my business finance. I've really enjoyed using the 3D analysis report to monitor the health of my company's finance</p>
-                        </div>
-
+                <div class="splide__slide watchtherevew" data-iframe="https://www.youtube.com/embed/NfNOXyPVjxk">
+                  <div class="w-full sm:w-3/4 mx-auto">
+                    <div class="w-full relative rounded-3xl overflow-hidden space-x-3 h-96 bg-no-repeat bg-cover bg-center" style="background-image: url(/images/videoreview1.png);">
+                      <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-white w-6 h-6">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                        </svg>
                       </div>
-                    </li>
+                    </div>
 
-                    <li class="splide__slide flex items-center p-10 bg-stone-300 bg-opacity-50 rounded-3xl">
-                      <div class="space-y-5">
+                    <div class="review-info px-5 py-12 text-center space-y-8">
+                        <div class="text-lg"><b>Mr. Konstantinos</b> of Retal Residence</div>
+                        <div class="leading-snug font-medium">" For the first time, i 've been able to use Manzel Express to fully account for my business finance. I've really enjoyed using the 3D analysis report to monitor the health of my company's finance "</div>
 
-                        <div class="flex space-x-5">
-                          <img src="https://demo.manzelexpress.com/hosted/images/f2/879d8b26a742a88ee439d77893f0be/image.png" alt="user profile image" class="w-32 h-32 object-cover object-top rounded-xl">
+                        <img src="/images/stars.png" alt="rating" class="w-32 mx-auto">
 
-                          <div class="user-info flex flex-col justify-center space-y-px">
-                            <div class="text-xl font-semibold tracking-wider">Medhat Beshara</div>
-                            <div class="text-lg">Maintenance & Operation Manager</div>
-                            <div class="text-lg">Retal Residence-KSA</div>
-                            <div class="flex items-center space-x-px">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                              <img src="images/star.svg" alt="star" class="w-6">
-                            </div>
-                          </div>
-                          <!-- user info -->
-                        </div>
+                    </div>
 
-                        <div class="text-lg text-gray-900">
-                          <p>I really like the fact on how it saves me many hours throughout my workweek and helps me cover my tracks at the same time. This is helpful especially during the busy part of my day. </p>
-                        </div>
+                  </div>
+                </div>
+                <!-- slide -->
 
+
+                <div class="splide__slide watchtherevew" data-iframe="https://www.youtube.com/embed/NfNOXyPVjxk">
+                  <div class="w-full sm:w-3/4 mx-auto">
+                    <div class="w-full relative rounded-3xl overflow-hidden space-x-3 h-96 bg-no-repeat bg-cover bg-center" style="background-image: url(/images/videoreview.png);">
+                      <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-white w-6 h-6">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                        </svg>
                       </div>
-                    </li>
+                    </div>
 
-                    <li class="splide__slide relative overflow-hidden rounded-3xl cursor-pointer watchtherevew" data-iframe="https://www.youtube.com/embed/NfNOXyPVjxk">
-                      <img src="/images/videoreview.png" alt="image" class="h-full w-full object-cover">
-                      <div class="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end">
-                        <div class="bg-gradient-to-t from-black to-transplarent w-full p-10 flex items-center space-x-3">
+                    <div class="review-info px-5 py-12 text-center space-y-8">
+                      <div class="text-lg"><b>Mr. Konstantinos</b> of Retal Residence</div>
+                      <div class="leading-snug font-medium">" For the first time, i 've been able to use Manzel Express to fully account for my business finance. I've really enjoyed using the 3D analysis report to monitor the health of my company's finance "</div>
 
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-                            </svg>
-                          </div>
+                      <img src="/images/stars.png" alt="rating" class="w-32 mx-auto">
 
-                          <div>
-                            <div class="text-white text-xl tracking-wide font-medium opacity-75">Play this video</div>
-                            <div class="text-white text-xl tracking-wide font-medium">Konstantinos Dendrinos</div>
-                            <div class="text-white text-xl tracking-wide">CEO-Real Residence-KSA</div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
+                    </div>
 
 
-                  </ul>
+                  </div>
+                </div>
+                <!-- slide -->
+
+              </div>
             </div>
-          </section>
+          </div>
           <!-- feedback-carousel -->
-
-
 
         </div>
         <!-- container -->
@@ -516,7 +497,38 @@
       </section>
       <!-- our client feedback -->
 
+      <div class="primary-container pt-16 sm:pt-24 3xl:pt-40">
+        <div class="text-3xl md:text-5xl font-semibold text-center mb-10">Book Your Demo Now</div>
 
+        <div class="book-your-demo-now mb-32">
+
+          <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-5">
+
+            <div class="w-full form-element">
+              <input type="text" class="form-input border-2 border-gray-100" placeholder="First Name">
+            </div>
+            <!-- form element -->
+
+            <div class="w-full form-element">
+              <input type="text" class="form-input border-2 border-gray-100" placeholder="Last Name">
+            </div>
+            <!-- form element -->
+
+            <div class="w-full form-element">
+              <input type="text" class="form-input border-2 border-gray-100" placeholder="Email">
+            </div>
+            <!-- form element -->
+
+            <div class="w-full form-element">
+              <input type="submit" class="form-button" value="Submit">
+            </div>
+            <!-- form element -->
+
+          </div>
+
+        </div>
+        <!-- book your demo now inline form -->
+      </div>
 
         <!-- review Popup start -->
         <div id="reviewPupupOverlay" class="fixed inset-0 bg-theme-black bg-opacity-75 flex items-center justify-center transition-all duration video-popup-overlay">
@@ -543,19 +555,19 @@
 
 
 
-      <section class="start-your-free-trail mt-32 md:mt-48 2xl:mt-64">
+      <section class="start-your-free-trail mt-16 sm:mt-24 2xl:mt-40">
 
         <div class="primary-container">
 
           <div class="h-[30rem] bg-theme-maroon text-white flex items-center justify-center text-center rounded-3xl relative">
             <img src="/images/home/trail.png" alt="tail pattern" class="absolute h-full w-full right-0 bottom-0 object-cover">
 
-            <div class="space-y-10 relative z-1 p-10 lg:p-0">
+            <div class="space-y-10 relative z-1 p-5 sm:p-10 lg:p-0">
 
               <div class="space-y-3">
                 <div class="text-2xl lg:text-4xl font-visby-bold"> Yarn will provide you with</div>
                 <div class="text-3xl lg:text-5xl font-visby-bold">30+ Modules & over 1,000+ features</div>
-                <p class="text-sm w-4/5 lg:w-2/3 mx-auto">cloud-based system that can manage your properties, tenant information, maintenance requests & feedback, 3rd party services, invoicng & payments, reminders & collection, All in one place!</p>
+                <p class="w-4/5 lg:w-2/3 mx-auto">cloud-based system that can manage your properties, tenant information, maintenance requests & feedback, 3rd party services, invoicng & payments, reminders & collection, All in one place!</p>
               </div>
 
               <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">

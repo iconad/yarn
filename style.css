@@ -98,7 +98,8 @@ button.accordion-button.active:after {
     transition: max-height 0.2s ease-out;
 }
 
-.splide__arrow {
+.aboutsplide .splide__arrow {
+  font-size: 30px;
   background: transparent!important;
 }
 
@@ -106,29 +107,40 @@ button.accordion-button.active:after {
   outline:none!important;
 }
 
-.splide__pagination__page {
-  /* margin: 4px!important; */
+.aboutsplide .splide__pagination__page {
+  margin: 4px!important;
 }
 
-.splide__pagination__page svg {
-  /* fill:#727272!important; */
+.aboutsplide  .splide__arrow {
+  top: 31%!important;
 }
 
-.splide__pagination__page.is-active {
-  /* background: gray!important;
+.aboutsplide  .splide__pagination__page svg {
+  fill:#727272!important;
+}
+
+.aboutsplide  .splide__pagination__page.is-active {
+  background: gray!important;
   width: 30px;
   border-radius: 15px;
-  transform: scale(1)!important; */
+  transform: scale(1)!important;
 }
 
 .splide__pagination.homesplide {
   right: auto;
   bottom: 10%;
+  margin-left: 15px;
 }
 
 @media only screen and (min-width: 1800px) {
   .splide__pagination.homesplide {
     bottom: 30%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .splide__pagination.homesplide {
+    margin-left: 15px;
   }
 }
 
@@ -155,6 +167,10 @@ button.accordion-button.active:after {
 
 .form-input {
   @apply w-full font-medium bg-gray-100 px-4 p-4 rounded-xl focus:outline-none active:outline-none focus:bg-gray-200;
+}
+
+.form-button {
+  @apply w-full font-medium bg-theme-black px-4 p-4 text-white rounded-xl focus:outline-none active:outline-none focus:bg-gray-200 cursor-pointer hover:bg-transparent border-2 hover:text-gray-900;
 }
 
 .search-input {
@@ -263,4 +279,8 @@ button.accordion-button.active:after {
 }
 .content-container a:hover {
   @apply underline;
+}
+
+.section-spacing {
+  @apply mt-16 sm:mt-24 2xl:mt-40;
 }

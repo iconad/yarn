@@ -12,21 +12,25 @@ import offset from 'document-offset';
 import '@splidejs/splide/css';
 import Splide, { FADE } from '@splidejs/splide';
 
-new Splide( '.homesplide', {
-    type: 'fade',
-    perPage: 1,
-    arrows: false,
-    gap: 0,
-    classes: {
-		pagination: 'splide__pagination homesplide',
-  },
-}).mount();
+const homesplide = document.querySelector('.homesplide');
+
+if(homesplide){
+    new Splide( '.homesplide', {
+        type: 'fade',
+        perPage: 1,
+        arrows: false,
+        gap: 0,
+        classes: {
+            pagination: 'splide__pagination homesplide',
+    },
+    }).mount();
 
 
-const HomeSplideList = document.getElementById('HomeSplideList');
-const HomeSplidePagination = document.querySelector('.splide__pagination.homesplide');
-const offsetResult = offset(HomeSplideList)
-HomeSplidePagination.style.left = offsetResult.left - 10 +'px';
+    const HomeSplideList = document.getElementById('HomeSplideList');
+    const HomeSplidePagination = document.querySelector('.splide__pagination.homesplide');
+    const offsetResult = offset(HomeSplideList)
+    HomeSplidePagination.style.left = offsetResult.left - 10 +'px';
+}
 
 
 var acc = document.getElementsByClassName("accordion-button");
@@ -55,10 +59,10 @@ for (i = 0; i < acc.length; i++) {
     } else { //pannel isnt open...
         //goes through the buttons and removes the 'active' css (+ and -)
 
-
         const allarrows = document.querySelectorAll('.acc-arrow-up');
 
         allarrows.forEach(arrow => {
+            // console.log(arrow)
             arrow.classList.add('hidden')
             this.querySelector('.acc-arrow-up').classList.remove('hidden')
             this.querySelector('.acc-arrow-down').classList.add('hidden')
@@ -82,7 +86,7 @@ for (i = 0; i < acc.length; i++) {
         //opens the specified pannel
         panel.style.maxHeight = panel.scrollHeight + "px";
         //adds the 'active' addition to the css.
-        this.classList.add("active");
+        // this.classList.add("active");
 
 
 
@@ -94,6 +98,56 @@ for (i = 0; i < acc.length; i++) {
 
     }//closing to the acc onclick function
 }
+
+// Sticky Navbar on scroll
+
+
+const nav = document.querySelector('#navigation');
+const whiteLogo = document.querySelector('#whiteLogo');
+const blackLogo = document.querySelector('#blackLogo');
+const whitenav = document.querySelectorAll('.whitenav');
+const screenheight = screen.height;
+let blackLogoOffset = offset(blackLogo).top;
+
+
+function stickyNavigation() {
+
+  if (window.scrollY > screenheight || blackLogoOffset > screenheight) {
+
+    nav.classList.remove('bg-transparent')
+    nav.classList.add('bg-theme-gray')
+
+    whiteLogo.classList.add('hidden')
+    blackLogo.classList.remove('hidden')
+
+    whitenav.forEach(wn => {
+        wn.classList.remove('text-white')
+        wn.classList.add('text-black')
+    });
+
+    blackLogoOffset = 0
+
+  } else {
+
+    nav.classList.remove('bg-theme-gray')
+    nav.classList.add('bg-transparent')
+
+    blackLogo.classList.add('hidden')
+    whiteLogo.classList.remove('hidden')
+
+    whitenav.forEach(wn => {
+        wn.classList.add('text-white')
+        wn.classList.remove('text-black')
+    });
+
+
+  }
+}
+
+stickyNavigation()
+
+window.addEventListener('scroll', stickyNavigation);
+
 
 // navbar-burger
 
@@ -125,7 +179,7 @@ watchthedemo.forEach(demo => {
         videoPupup.classList.add('video-popup-active')
 
     });
-  });
+});
 
 if(closeVideoPopup) {
     closeVideoPopup.addEventListener('click', function () {
