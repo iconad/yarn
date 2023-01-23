@@ -8,8 +8,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yarn</title>
-    <script type="module" crossorigin src="/assets/global.c4277691.js"></script>
-    <link rel="stylesheet" href="/assets/global.7e037108.css">
+    <script type="module" crossorigin src="/assets/global.18518375.js"></script>
+    <link rel="stylesheet" href="/assets/global.a9672436.css">
   </head>
   <body class="overflow-x-hidden">
     <div id="app" class="site-wrapper">
@@ -201,6 +201,7 @@
           </div>
           <!-- section header -->
 
+
           <div class="section-boxes">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
@@ -316,7 +317,7 @@
               <span class="span-block">We're not just another Software Company</span>
               <span class="span-block">We have Everything your business needs to scale!</span>
             </h3>
-            <h3 class="text-4xl font-bold text-theme-red"> 30+ Modules & over 1,000+ features </h3>
+            <h3 class="text-4xl font-bold text-theme-red"> <span class="scroll-counter" data-counter-time="1500">30</span>+ Modules & over <span class="scroll-counter" data-counter-time="1500">1000</span>+ features </h3>
             <p class="w-full lg:w-4/5 mx-auto">Cloud-based system that can manage your properties, tenant information, maintenance requests & feedback, 3rd party services, invoicing & payments, reminders & collection, All in one place!</p>
           </div>
           <!-- sectoin header -->
@@ -489,7 +490,9 @@
                 <img src="/images/home/icons-white/1.png" alt="image" class="w-20 mx-auto">
                 <div class="mt-5">
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block pb-2">more than SAR</span>
-                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">3 billion</div>
+                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">
+                    <span class="scroll-counter" data-counter-time="1000">3</span>
+                    billion</div>
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block">Assets Managed</span>
                 </div>
               </div>
@@ -508,7 +511,10 @@
                 <img src="/images/home/icons-white/2.png" alt="image" class="w-16 mx-auto">
                 <div class="mt-5">
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block pb-2">Used & Loved by</span>
-                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">+3,000</div>
+                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">
+                    +
+                    <span class="scroll-counter" data-counter-time="1500">3000</span>
+                  </div>
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block">Users</span>
                 </div>
               </div>
@@ -526,7 +532,10 @@
                 <img src="/images/home/icons-white/3.png" alt="image" class="w-16 mx-auto">
                 <div class="mt-5">
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block pb-2">Daily</span>
-                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">+10,000</div>
+                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">
+                    +
+                    <span class="scroll-counter" data-counter-time="1700">10000</span>
+                  </div>
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block">Transactions made</span>
                 </div>
               </div>
@@ -545,7 +554,9 @@
                 <img src="/images/home/icons-white/4.png" alt="image" class="w-16 mx-auto">
                 <div class="mt-5">
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block pb-2">more than SAR</span>
-                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">300 M</div>
+                  <div class="text-5xl sm:text-7xl leading-none font-bold uppercase">
+                    <span class="scroll-counter" data-counter-time="1500">300</span>
+                    M</div>
                   <span class="text-2xl sm:text-3xl leading-snug sm:leading-none font-medium capitalize block">Rents Collected</span>
                 </div>
               </div>
@@ -633,11 +644,38 @@
 
               </h3>
 
+
+              
+
+     
               <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mx-auto">
 
                 <div class="flex items-start justify-center bg-theme-gray px-10 py-12 rounded-2xl">
                   <div class="space-y-7 text-xl font-medium">
-                    <img src="./images/home/60p.png" alt="image" class="w-4/5 mx-auto">
+
+                    <svg viewBox="0 0 36 36" class="circular-chart w-full">
+                      <defs>
+                        <linearGradient id="gradient" x1="50%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%"   stop-color="#ED9E2F"/>
+                          <stop offset="100%" stop-color="#BC1F5F"/>
+                        </linearGradient>
+                      </defs>
+                      <path class="circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="circle scroll-counter"
+                        stroke="url(#gradient)"
+                        stroke-dasharray="60, 100"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="15" y="22" class="percentage font-black scroll-counter" data-counter-time="1500">60</text>
+                      <text x="25" y="22" class="percentage font-black">%</text>
+                    </svg>
+
                     <div>
                       Reduction in
                       <br>
@@ -649,7 +687,28 @@
 
                 <div class="flex items-start justify-center bg-theme-gray px-10 py-12 rounded-2xl">
                   <div class="space-y-7 text-xl font-medium">
-                    <img src="./images/home/20p.png" alt="image" class="w-4/5 mx-auto">
+                    <svg viewBox="0 0 36 36" class="circular-chart w-full">
+                      <defs>
+                        <linearGradient id="gradient2" x1="100%" y1="0%" x2="100%" y2="50%">
+                          <stop offset="0%"   stop-color="#ED9E2F"/>
+                          <stop offset="100%" stop-color="#BC1F5F"/>
+                        </linearGradient>
+                      </defs>
+                      <path class="circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="circle scroll-counter"
+                        stroke="url(#gradient2)"
+                        stroke-dasharray="20, 100"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="13" y="22" class="percentage font-black scroll-counter" data-counter-time="1500">20</text>
+                      <text x="25" y="22" class="percentage font-black">%+</text>
+                    </svg>
                     <div>
                       In Increasing
                       <br>
@@ -661,8 +720,28 @@
 
                 <div class="flex items-start justify-center bg-theme-gray px-10 py-12 rounded-2xl">
                   <div class="space-y-7 text-xl font-medium">
-                    <img src="./images/home/90p.png" alt="image" class="w-4/5 mx-auto">
-                    <div>
+                    <svg viewBox="0 0 36 36" class="circular-chart w-full">
+                      <defs>
+                        <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%"   stop-color="#ED9E2F"/>
+                          <stop offset="100%" stop-color="#BC1F5F"/>
+                        </linearGradient>
+                      </defs>
+                      <path class="circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="circle scroll-counter"
+                        stroke="url(#gradient3)"
+                        stroke-dasharray="90, 100"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="15" y="22" class="percentage font-black scroll-counter" data-counter-time="1500">90</text>
+                      <text x="25" y="22" class="percentage font-black">%</text>
+                    </svg>                    <div>
                       Enhancement in
                       <br>
                       Customer Relationship
