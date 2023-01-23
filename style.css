@@ -284,3 +284,69 @@ button.accordion-button.active:after {
 .section-spacing {
   @apply mt-16 sm:mt-24 2xl:mt-40;
 }
+
+.section-spacing-no-mobile {
+  @apply mt-0 sm:mt-24 2xl:mt-40;
+}
+
+
+
+/* SVG animated circle */
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke-width: 3;
+  @apply stroke-gray-200;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.circle.animate {
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  /* stroke: #ff9f00; */
+  /* @apply stroke-red-500; */
+}
+
+.circular-chart.green .circle {
+  /* stroke: #4CC790; */
+}
+
+.circular-chart.blue .circle {
+  /* stroke: #3c9ee5; */
+}
+
+.percentage {
+  fill: #BC1F5F;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
