@@ -106,6 +106,7 @@ const nav = document.querySelector('#navigation');
 const whiteLogo = document.querySelector('#whiteLogo');
 const blackLogo = document.querySelector('#blackLogo');
 const whitenav = document.querySelectorAll('.whitenav');
+const pbutton = document.querySelectorAll('.pbutton');
 const screenheight = screen.height;
 let blackLogoOffset = offset(blackLogo).top;
 
@@ -124,6 +125,10 @@ function stickyNavigation() {
         wn.classList.remove('text-white')
         wn.classList.add('text-black')
     });
+    pbutton.forEach(wn => {
+        wn.classList.remove('primary-button-on-hover-white')
+        wn.classList.add('primary-button')
+    });
 
     blackLogoOffset = 0
 
@@ -138,6 +143,11 @@ function stickyNavigation() {
     whitenav.forEach(wn => {
         wn.classList.add('text-white')
         wn.classList.remove('text-black')
+    });
+
+    pbutton.forEach(wn => {
+        wn.classList.add('primary-button-on-hover-white')
+        wn.classList.remove('primary-button')
     });
 
 
