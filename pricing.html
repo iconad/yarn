@@ -11,7 +11,7 @@
 
 
 
-    <div id="navigation" class="navbar-wrapper fixed left-0 top-0 py-5 sm:py-3 w-full z-50 bg-theme-gray">
+    <div  class="navbar-wrapper fixed left-0 top-0 py-5 sm:py-3 w-full z-50 bg-theme-gray">
 
       <div class="primary-container flex items-center justify-between w-full">
 
@@ -129,7 +129,8 @@
     <!-- navbar wrapper -->
 
 
-      <section class="yarn-pricing section-spacing">
+      
+      <section class="yarn-pricing section-spacing ">
 
         <div class="primary-container">
 
@@ -140,7 +141,7 @@
 
             <div class="pricing-checkbox my-16">
 
-              <div class="h-12 lg:h-16 w-96 mx-auto flex items-center jusitfy-center relative cursor-pointer bg-gray-100 rounded-full button-place">
+              <div class="h-12 lg:h-16 w-full sm:w-96 mx-auto flex items-center jusitfy-center relative cursor-pointer bg-gray-100 rounded-full button-place">
                   <div class="moving-button is-one transition-all"></div>
                   <label class="w-1/2 relative z-1 pointer-events-none">
                       <input type="radio" class="hidden" name="pricing">
@@ -152,15 +153,17 @@
                   </label>
               </div>
 
-          </div>
+            </div>
           <!-- pricing checkbox -->
 
-            <div class="pricing-table">
+          
+            <!-- YARN PRICING DESKTOP -->
+            <div class="hidden md:block pricing-table">
 
                 <div class="flex flex-wrap w-full bg-gray-50 rounded-2xl overflow-hidden">
 
-                    <div class="p-2 w-1/4 2xl:w-[40%] block"></div>
-                    <div class="bg-[#F5EEE4] w-1/4 2xl:w-[20%] uppercase">
+                    <div class="p-2 hidden md:block w-1/4 2xl:w-[40%] block"></div>
+                    <div class="bg-[#F5EEE4] w-[33.33%] md:w-1/4 2xl:w-[20%] uppercase">
                       <div class="p-4 bg-theme-yellow font-bold tracking-wider text-xl text-white">LITE</div>
                       <div class="space-y-2 py-5 2xl:py-10 px-5">
                         <div class="font-semibold">10.99 SAR</div>
@@ -169,14 +172,14 @@
                         <div class="text-[9px] 2xl:text-[10px] text-gray-900 font-normal leading-none">Plug & Play! For small companies. Automate your daily activities & level up your service from one place</div>
                       </div>
                     </div>
-                    <div class="bg-[#EAE5EB] w-1/4 2xl:w-[20%] uppercase">
+                    <div class="bg-[#EAE5EB] w-[33.33%] md:w-1/4 2xl:w-[20%] uppercase">
                       <div class="p-4 bg-theme-purple font-bold tracking-wider text-xl text-white">PRO</div>
                       <div class="space-y-2 py-5 2xl:py-10 px-5">
                         <div class="leading-none text-theme-purple font-bold pt-5">Best for managing <br class="span-block"> more than 100 units</div>
                         <div class="text-[9px] 2xl:text-[10px] text-gray-900 font-normal leading-none">Automate your operations and financials with more customized experience for your team & tenants. All the heavy lifting is on us; we'll help you with everything to digitize your property!</div>
                       </div>
                     </div>
-                    <div class="bg-[#EDEDED] w-1/4 2xl:w-[20%] uppercase">
+                    <div class="bg-[#EDEDED] w-[33.33%] md:w-1/4 2xl:w-[20%] uppercase">
                       <div class="p-4 bg-theme-black font-bold tracking-wider text-xl text-white">Enterprise</div>
                       <div class="space-y-2 py-5 2xl:py-10 px-5">
                         <div class="leading-none text-theme-black font-bold">Managing more than 250 units and looking to transform the entire entity?</div>
@@ -187,7 +190,7 @@
 
                     <!-- accordion start here -->
 
-                    <div class="relative flex min-h-screen flex-col justify-start overflow-hidden bg-gray-50 py-1 w-full">
+                    <div class="relative flex pb-5 flex-col justify-start overflow-hidden bg-gray-50 py-1 w-full">
                       <div class="w-full space-y-1">
 
                         <details class="group" open>
@@ -789,13 +792,14 @@
                 </div>
 
             </div>
-            <!-- desktop  -->
+            <!-- YARN PRICING DESKTOP END -->
 
-            <!-- mobile pricing table -->
-            <div class="mobile-pricing-table block lg:hidden">
+   
+            <!--  YARN PRICING MOBILE -->
+            <div class="block lg:hidden mobile-pricing-table">
 
 
-              <div class="splide">
+              <div class="pricingsplide splide">
                 <div class="splide__track">
                   <div class="splide__list">
 
@@ -803,246 +807,627 @@
                     <div class="splide__slide flex flex-wrap w-full">
 
 
-                      <div class="p-2 bg-theme-yellow w-full text-white font-bold text-xl rounded-tl-3xl rounded-t-3xl">Basic</div>
-
-                      <div class="py-10 px-5 w-full border-l border-r">
-                          <span class="relative inline-block">
-                              <span class="absolute top-0 -left-3 text-xl text-gray-500 font-semibold ">$</span>
-                              <span class="text-5xl font-visby-semibold font-medium text-theme-purple">10</span>
-                          </span>
-                          <small class="-ml-1 text-lg text-theme-purple">/month</small>
+                      <div class="bg-[#F5EEE4] w-full uppercase">
+                        <div class="p-4 bg-theme-yellow font-bold tracking-wider text-xl text-white">LITE</div>
+                        <div class="space-y-2 py-10 px-5">
+                          <div class="font-semibold">10.99 SAR</div>
+                          <div class="text-sm font-medium">Per Unit / Per month</div>
+                          <div class="text-xl leading-none text-theme-yellow font-bold">Minimum monthly <br class="span-block">fee 1,000 SAR</div>
+                          <div class="text-xs text-gray-900 font-medium leading-snug">Plug & Play! For small companies. Automate your daily activities & level up your service from one place</div>
+                        </div>
                       </div>
 
+                      <!-- accordion start here -->
 
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                          <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
+                    <div class="relative flex pb-5 flex-col justify-start overflow-hidden bg-gray-50 py-1 w-full">
+                      <div class="w-full space-y-1">
+
+                        <details class="group" open>
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Property Management Operation</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Automated Contract & Lease Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Tenant Maintenance Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Payment & Invoicing Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Broadcast & Notifications </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Amenities & Services Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Visitors Access Management ( VAM)  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Support </span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Ticketing & Online Support </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Onboarding</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Online Library & Video Tutorials </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                          
+                          </div>
+                        </details>
+
+                        <!-- ROW -->
+                        <div class="flex flex-wrap w-full">
+                          <div class="py-5 px-5 w-full font-semibold text-sm text-left rtl:text-right">
+                            <p>* Setup & Configuration Fees 
+                              Applied based on Entity size. </p>
+                          </div>
+                          <div class="py-5 px-5 w-full">
+                              <a href="#" class="warning-button inline-block uppercase"> Subscribe Now </a>
+                          </div>
+                        </div>
+                        <!-- ROW END -->
+                        
                       </div>
-                      <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                          </svg>
-                      </div>
-
-
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                          <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                      </div>
-                      <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
-                            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-
-
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                        <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
-                    <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
 
+                    <!-- accordion end here -->
 
-                    <!-- ROW -->
-                    <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                        <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                    </div>
-                    <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
-                          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                      </svg>
-                    </div>
-
-
-                    <!-- ROW -->
-                    <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                      <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                  </div>
-                  <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                  </div>
-
-
-
-
-                      <div class="mt-6 p-2 w-full flex items-center justify-center space-x-2 rtl:space-x-reverse">
-                          <a href="#" class="primary-button w-full"> Select </a>
-                      </div>
 
 
 
 
                     </div>
-                    <!-- basic -->
+                    <!-- lite -->
 
 
                     <div class="splide__slide flex flex-wrap w-full">
 
 
-                      <div class="p-2 bg-theme-purple w-full text-white font-bold text-xl rounded-tl-3xl rounded-t-3xl">Plus</div>
-
-                      <div class="py-10 px-5 w-full border-l border-r">
-                          <span class="relative inline-block">
-                              <span class="absolute top-0 -left-3 text-xl text-gray-500 font-semibold ">$</span>
-                              <span class="text-5xl font-visby-semibold font-medium text-theme-purple">10</span>
-                          </span>
-                          <small class="-ml-1 text-lg text-theme-purple">/month</small>
+                      <div class="bg-[#EAE5EB] w-full uppercase">
+                        <div class="p-4 bg-theme-purple font-bold tracking-wider text-xl text-white">pro</div>
+                        <div class="space-y-2 py-10 px-5">
+                          <div class="text-xl leading-none text-theme-purple font-bold pt-5">Best for managing <br class="span-block"> more than 100 units</div>
+                          <div class="text-xs text-gray-900 font-normal leading-snug">Automate your operations and financials with more customized experience for your team & tenants. All the heavy lifting is on us; we'll help you with everything to digitize your property!</div>
+                        </div>
                       </div>
 
+                      <!-- accordion start here -->
 
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                          <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
+                    <div class="relative flex pb-5 flex-col justify-start overflow-hidden bg-gray-50 py-1 w-full">
+                      <div class="w-full space-y-1">
+
+                        <details class="group" open>
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Property Management Operation</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Automated Contract & Lease Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Tenant Maintenance Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Payment & Invoicing Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Broadcast & Notifications </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Amenities & Services Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Visitors Access Management ( VAM)  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Growth Features</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Accounting System (GL, AR, AP, VAT, Reporting) </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Tax Invoices with QR  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Customer Relationship Management ( CRM) </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Profitability per Unit/ Track Cost per Request  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Support </span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Ticketing & Online Support </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Priority Support </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Onboarding</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Online Library & Video Tutorials </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Dedicated Team to import your existing data </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Customized training & Workshops </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Dedicated Account Manager </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                          </div>
+                        </details>
+
+                        <!-- ROW -->
+                        <div class="flex flex-wrap w-full">
+                          <div class="py-5 px-5 w-full font-semibold text-sm text-left rtl:text-right">
+                            <p>* Setup & Configuration Fees 
+                              Applied based on Entity size. </p>
+                          </div>
+                          <div class="py-5 px-5 w-full">
+                              <a href="#" class="primary-button inline-block uppercase"> Contact Us </a>
+                          </div>
+                        </div>
+                        <!-- ROW END -->
+                        
                       </div>
-                      <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                          </svg>
-                      </div>
-
-
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                          <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                      </div>
-                      <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
-                            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-
-
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                        <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
-                    <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
 
+                    <!-- accordion end here -->
 
-                    <!-- ROW -->
-                    <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                        <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                    </div>
-                    <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
-                          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                      </svg>
-                    </div>
-
-
-                    <!-- ROW -->
-                    <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                      <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                  </div>
-                  <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                  </div>
-
-
-
-
-                      <div class="mt-6 p-2 w-full flex items-center justify-center space-x-2 rtl:space-x-reverse">
-                          <a href="#" class="primary-button w-full"> Select </a>
-                      </div>
 
 
 
 
                     </div>
-                    <!-- plus -->
+                    <!-- pro -->
+
 
                     <div class="splide__slide flex flex-wrap w-full">
 
 
-                      <div class="p-2 bg-theme-red w-full text-white font-bold text-xl rounded-tl-3xl rounded-t-3xl">Premium</div>
-
-                      <div class="py-10 px-5 w-full border-l border-r">
-                          <span class="relative inline-block">
-                              <span class="absolute top-0 -left-3 text-xl text-gray-500 font-semibold ">$</span>
-                              <span class="text-5xl font-visby-semibold font-medium text-theme-purple">10</span>
-                          </span>
-                          <small class="-ml-1 text-lg text-theme-purple">/month</small>
+                      <div class="bg-[#EDEDED] w-full uppercase">
+                        <div class="p-4 bg-theme-black font-bold tracking-wider text-xl text-white">enterprise</div>
+                        <div class="space-y-2 py-10 px-5">
+                          <div class="text-xl leading-none text-theme-black font-bold">Managing more than 250 units and looking to transform the entire entity?</div>
+                          <div class="text-xs text-gray-900 font-normal leading-snug"> You have all the advanced features  to turn your entity into a paperless and smart environment! Along with your own ERP+ , you can now scale your business and takes it to the next level!</div>                        </div>
                       </div>
 
+                      <!-- accordion start here -->
 
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                          <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
+                    <div class="relative flex pb-5 flex-col justify-start overflow-hidden bg-gray-50 py-1 w-full">
+                      <div class="w-full space-y-1">
+
+                        <details class="group" open>
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Property Management Operation</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Automated Contract & Lease Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Tenant Maintenance Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Payment & Invoicing Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Broadcast & Notifications </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Amenities & Services Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Visitors Access Management ( VAM)  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Growth Features</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Accounting System (GL, AR, AP, VAT, Reporting) </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Tax Invoices with QR  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Customer Relationship Management ( CRM) </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Assets Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Vendors Management & Bills </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Inventory Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Profitability per Unit/ Track Cost per Request  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Advanced Purchasing Management  </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Employee & Personnel Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Fleet Management </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Commercial Website </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Support </span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Ticketing & Online Support </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Priority Support </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                          </div>
+                        </details>
+                        <details class="group">
+                          <summary class="flex cursor-pointer list-none items-center justify-between font-medium p-5 bg-[#F2F2F2]">
+                            <span class="text-lg font-medium"> Onboarding</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                          </summary>
+                          <div class="group-open:animate-fadeIn text-neutral-600">
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Online Library & Video Tutorials </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                            
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Dedicated Team to import your existing data </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full bg-white">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p>Customized training & Workshops </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+
+                            <!-- ROW -->
+                            <div class="flex flex-wrap w-full">
+                              <div class="py-2 px-5 w-full font-medium text-left rtl:text-right">
+                                <p> Dedicated Account Manager </p>
+                              </div>
+                            </div>
+                            <!-- ROW END -->
+                          </div>
+                        </details>
+
+                        <!-- ROW -->
+                        <div class="flex flex-wrap w-full">
+                          <div class="py-5 px-5 w-full font-semibold text-sm text-left rtl:text-right">
+                            <p>* Setup & Configuration Fees 
+                              Applied based on Entity size. </p>
+                          </div>
+                          <div class="py-5 px-5 w-full">
+                              <a href="#" class="secondary-button inline-block uppercase"> Contact Us </a>
+                          </div>
+                        </div>
+                        <!-- ROW END -->
+                        
                       </div>
-                      <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                          </svg>
-                      </div>
-
-
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                          <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                      </div>
-                      <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
-                            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-
-
-                      <!-- ROW -->
-                      <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                        <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
                     </div>
-                    <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
 
+                    <!-- accordion end here -->
 
-                    <!-- ROW -->
-                    <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                        <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                    </div>
-                    <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-theme-red mx-auto">
-                          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                      </svg>
-                    </div>
-
-
-                    <!-- ROW -->
-                    <div class="bg-gray-100 py-5 px-5 w-3/4 text-sm text-left rtl:text-right">
-                      <p>Lorem ipsum dolor sit amet consectetur Blanditiis laboriosam fugiat </p>
-                  </div>
-                  <div class="bg-gray-100 py-2 px-5 w-1/4 2xl:w-[20%] border-l">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-500 mx-auto">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                  </div>
-
-
-
-
-                      <div class="mt-6 p-2 w-full flex items-center justify-center space-x-2 rtl:space-x-reverse">
-                          <a href="#" class="primary-button w-full"> Select </a>
-                      </div>
 
 
 
 
                     </div>
-                    <!-- premium -->
+                    <!-- enterprise -->
+
 
 
                   </div>
@@ -1051,8 +1436,9 @@
 
 
 
-          </div>
-          <!-- mobile -->
+            </div>
+            <!--  YARN PRICING MOBILE END -->
+
 
 
 
@@ -1064,8 +1450,7 @@
         <!-- container -->
 
       </section>
-      <!-- pricing section -->
-
+      
 
       <section class="yarn-solutions-redefines section-spacing">
 

@@ -154,9 +154,12 @@ function stickyNavigation() {
   }
 }
 
-stickyNavigation()
-
-window.addEventListener('scroll', stickyNavigation);
+if(nav) {
+  
+  stickyNavigation()
+  window.addEventListener('scroll', stickyNavigation);
+  
+}
 
 
 // navbar-burger

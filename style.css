@@ -107,6 +107,7 @@ button.accordion-button.active:after {
   outline:none!important;
 }
 
+.pricingsplide .splide__pagination__page,
 .aboutsplide .splide__pagination__page {
   margin: 4px!important;
 }
@@ -115,11 +116,13 @@ button.accordion-button.active:after {
   top: 31%!important;
 }
 
+.pricingsplide  .splide__pagination__page svg,
 .aboutsplide  .splide__pagination__page svg {
   fill:#727272!important;
 }
 
-.aboutsplide  .splide__pagination__page.is-active {
+.pricingsplide .splide__pagination__page.is-active,
+.aboutsplide .splide__pagination__page.is-active {
   background: gray!important;
   width: 30px;
   border-radius: 15px;
