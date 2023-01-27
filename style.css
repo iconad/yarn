@@ -284,12 +284,16 @@ button.accordion-button.active:after {
   @apply underline;
 }
 
+.section-spacing-small-on-big {
+  @apply mt-16 sm:mt-24;
+}
+
 .section-spacing {
-  @apply mt-16 sm:mt-24 2xl:mt-40;
+  @apply mt-16 sm:mt-24;
 }
 
 .section-spacing-no-mobile {
-  @apply mt-0 sm:mt-24 2xl:mt-40;
+  @apply mt-0 sm:mt-24;
 }
 
 
