@@ -10,7 +10,7 @@ new Splide( '.pricingsplide', {
     perPage: 1,
     gap: 0,
     pagination: true,
-    arrows :false
+    arrows :true
   }).mount();
 
 
